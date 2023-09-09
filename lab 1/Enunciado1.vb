@@ -7,4 +7,5 @@
         costoFinal = costoInicial + (costoInicial * gananciaVend) + (costoInicial * impuesto)
         txtResult.Text = costoFinal
     End Sub
+
 End Class

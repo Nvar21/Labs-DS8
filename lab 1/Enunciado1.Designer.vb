@@ -45,12 +45,12 @@ Partial Class Enunciado1
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(136, 194)
+        Label2.Location = New Point(153, 194)
         Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(360, 32)
+        Label2.Size = New Size(312, 32)
         Label2.TabIndex = 1
-        Label2.Text = "Ingrese el costo del automóvil"
+        Label2.Text = "Costo inical del automóvil"
         ' 
         ' txtCosto
         ' 
