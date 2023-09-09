@@ -82,9 +82,10 @@ Partial Class Enunciado1
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(431, 411)
+        Button1.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.Location = New Point(509, 412)
         Button1.Name = "Button1"
-        Button1.Size = New Size(112, 34)
+        Button1.Size = New Size(174, 44)
         Button1.TabIndex = 6
         Button1.Text = "Ejecutar"
         Button1.UseVisualStyleBackColor = True
