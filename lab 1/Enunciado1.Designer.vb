@@ -24,47 +24,83 @@ Partial Class Enunciado1
     Private Sub InitializeComponent()
         Label1 = New Label()
         Label2 = New Label()
-        Txt1 = New TextBox()
+        txtCosto = New TextBox()
+        Label3 = New Label()
+        txtResult = New TextBox()
+        Button1 = New Button()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(422, 53)
+        Label1.Font = New Font("Myanmar Text", 14F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(365, 60)
         Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(155, 32)
+        Label1.Size = New Size(286, 50)
         Label1.TabIndex = 0
-        Label1.Text = "Enunciado 1"
+        Label1.Text = "Costo del automóvil"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(247, 196)
+        Label2.Location = New Point(136, 194)
         Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(206, 32)
+        Label2.Size = New Size(360, 32)
         Label2.TabIndex = 1
-        Label2.Text = "Costo Automovil"
+        Label2.Text = "Ingrese el costo del automóvil"
         ' 
-        ' Txt1
+        ' txtCosto
         ' 
-        Txt1.Location = New Point(522, 197)
-        Txt1.Name = "Txt1"
-        Txt1.Size = New Size(150, 31)
-        Txt1.TabIndex = 2
+        txtCosto.Font = New Font("Myanmar Text", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        txtCosto.Location = New Point(522, 194)
+        txtCosto.Name = "txtCosto"
+        txtCosto.Size = New Size(150, 45)
+        txtCosto.TabIndex = 2
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.Location = New Point(325, 303)
+        Label3.Margin = New Padding(4, 0, 4, 0)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(140, 32)
+        Label3.TabIndex = 3
+        Label3.Text = "Costo Final"
+        ' 
+        ' txtResult
+        ' 
+        txtResult.Font = New Font("Myanmar Text", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        txtResult.Location = New Point(522, 303)
+        txtResult.Name = "txtResult"
+        txtResult.ReadOnly = True
+        txtResult.Size = New Size(150, 45)
+        txtResult.TabIndex = 4
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(431, 411)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(112, 34)
+        Button1.TabIndex = 6
+        Button1.Text = "Ejecutar"
+        Button1.UseVisualStyleBackColor = True
         ' 
         ' Enunciado1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1000, 562)
-        Controls.Add(Txt1)
+        Controls.Add(Button1)
+        Controls.Add(txtResult)
+        Controls.Add(Label3)
+        Controls.Add(txtCosto)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Margin = New Padding(4, 4, 4, 4)
+        Margin = New Padding(4)
         Name = "Enunciado1"
         Text = "Enunciado1"
         ResumeLayout(False)
@@ -73,5 +109,8 @@ Partial Class Enunciado1
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Txt1 As TextBox
+    Friend WithEvents txtCosto As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtResult As TextBox
+    Friend WithEvents Button1 As Button
 End Class
