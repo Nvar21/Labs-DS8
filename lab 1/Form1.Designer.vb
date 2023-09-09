@@ -62,9 +62,9 @@ Partial Class Form1
         GroupBox1.Controls.Add(Button1)
         GroupBox1.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point)
         GroupBox1.Location = New Point(222, 126)
-        GroupBox1.Margin = New Padding(4, 4, 4, 4)
+        GroupBox1.Margin = New Padding(4)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Padding = New Padding(4, 4, 4, 4)
+        GroupBox1.Padding = New Padding(4)
         GroupBox1.Size = New Size(581, 445)
         GroupBox1.TabIndex = 2
         GroupBox1.TabStop = False
