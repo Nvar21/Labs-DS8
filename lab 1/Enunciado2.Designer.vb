@@ -37,9 +37,9 @@ Partial Class Enunciado2
         Label1.AutoSize = True
         Label1.FlatStyle = FlatStyle.System
         Label1.Font = New Font("Myanmar Text", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(12, 9)
+        Label1.Location = New Point(14, 12)
         Label1.Name = "Label1"
-        Label1.Size = New Size(596, 34)
+        Label1.Size = New Size(772, 43)
         Label1.TabIndex = 0
         Label1.Text = "Enunciado 2 - Registro de accidentes automovilisticos por genero"
         ' 
@@ -47,10 +47,10 @@ Partial Class Enunciado2
         ' 
         Label3.AutoSize = True
         Label3.FlatStyle = FlatStyle.System
-        Label3.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
-        Label3.Location = New Point(22, 53)
+        Label3.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.Location = New Point(25, 71)
         Label3.Name = "Label3"
-        Label3.Size = New Size(257, 29)
+        Label3.Size = New Size(317, 36)
         Label3.TabIndex = 3
         Label3.Text = "Ingrese género del accidentado:"
         ' 
@@ -58,10 +58,10 @@ Partial Class Enunciado2
         ' 
         Label4.AutoSize = True
         Label4.FlatStyle = FlatStyle.System
-        Label4.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(22, 79)
+        Label4.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.Location = New Point(25, 105)
         Label4.Name = "Label4"
-        Label4.Size = New Size(413, 29)
+        Label4.Size = New Size(515, 36)
         Label4.TabIndex = 5
         Label4.Text = "(1 para Mujer / 2 para Hombre / 0 para finalizar registros)"
         ' 
@@ -69,35 +69,38 @@ Partial Class Enunciado2
         ' 
         Label6.AutoSize = True
         Label6.FlatStyle = FlatStyle.System
-        Label6.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
-        Label6.Location = New Point(22, 121)
+        Label6.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label6.Location = New Point(25, 161)
         Label6.Name = "Label6"
-        Label6.Size = New Size(259, 29)
+        Label6.Size = New Size(320, 36)
         Label6.TabIndex = 6
         Label6.Text = "Ingrese la edad del accidentado:"
         ' 
         ' txtGenero
         ' 
-        txtGenero.Location = New Point(285, 53)
+        txtGenero.Location = New Point(326, 71)
+        txtGenero.Margin = New Padding(3, 4, 3, 4)
         txtGenero.MaxLength = 1
         txtGenero.Name = "txtGenero"
         txtGenero.PlaceholderText = "0, 1 o 2"
-        txtGenero.Size = New Size(100, 23)
+        txtGenero.Size = New Size(114, 27)
         txtGenero.TabIndex = 2
         txtGenero.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtEdad
         ' 
-        txtEdad.Location = New Point(285, 121)
+        txtEdad.Location = New Point(326, 161)
+        txtEdad.Margin = New Padding(3, 4, 3, 4)
         txtEdad.Name = "txtEdad"
-        txtEdad.Size = New Size(100, 23)
+        txtEdad.Size = New Size(114, 27)
         txtEdad.TabIndex = 9
         ' 
         ' bntRegistrar
         ' 
-        bntRegistrar.Location = New Point(178, 189)
+        bntRegistrar.Location = New Point(203, 252)
+        bntRegistrar.Margin = New Padding(3, 4, 3, 4)
         bntRegistrar.Name = "bntRegistrar"
-        bntRegistrar.Size = New Size(103, 23)
+        bntRegistrar.Size = New Size(118, 31)
         bntRegistrar.TabIndex = 10
         bntRegistrar.Text = "Añadir Registro"
         bntRegistrar.UseVisualStyleBackColor = True
@@ -105,18 +108,19 @@ Partial Class Enunciado2
         ' btnCalcular
         ' 
         btnCalcular.Enabled = False
-        btnCalcular.Location = New Point(323, 189)
+        btnCalcular.Location = New Point(369, 252)
+        btnCalcular.Margin = New Padding(3, 4, 3, 4)
         btnCalcular.Name = "btnCalcular"
-        btnCalcular.Size = New Size(122, 23)
+        btnCalcular.Size = New Size(139, 31)
         btnCalcular.TabIndex = 11
         btnCalcular.Text = "Obtener Estadísticas"
         btnCalcular.UseVisualStyleBackColor = True
         ' 
         ' Enunciado2
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(609, 293)
+        ClientSize = New Size(795, 391)
         Controls.Add(btnCalcular)
         Controls.Add(bntRegistrar)
         Controls.Add(txtEdad)
@@ -125,7 +129,6 @@ Partial Class Enunciado2
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(Label1)
-        Margin = New Padding(3, 2, 3, 2)
         Name = "Enunciado2"
         Text = "Enunciado2"
         ResumeLayout(False)

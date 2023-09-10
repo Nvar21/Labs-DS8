@@ -3,16 +3,24 @@
         Enunciado1.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnEnun2_Click(sender As Object, e As EventArgs) Handles btnEnun2.Click
         Enunciado2.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub btnEnun3_Click(sender As Object, e As EventArgs) Handles btnEnun3.Click
         Enunciado3.Show()
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub btnEnun4_Click(sender As Object, e As EventArgs) Handles btnEnun4.Click
         Enunciado4.Show()
+    End Sub
+
+    Private Sub btnEnun5_Click(sender As Object, e As EventArgs) Handles btnEnun5.Click
+
+    End Sub
+
+    Private Sub btnEnun6_Click(sender As Object, e As EventArgs) Handles btnEnun6.Click
+        Enunciado6.Show()
     End Sub
 End Class
