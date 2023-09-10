@@ -59,6 +59,7 @@ Partial Class Enunciado1
         txtCosto.Name = "txtCosto"
         txtCosto.Size = New Size(150, 45)
         txtCosto.TabIndex = 2
+        txtCosto.TextAlign = HorizontalAlignment.Center
         ' 
         ' Label3
         ' 
@@ -79,6 +80,7 @@ Partial Class Enunciado1
         txtResult.ReadOnly = True
         txtResult.Size = New Size(150, 45)
         txtResult.TabIndex = 4
+        txtResult.TextAlign = HorizontalAlignment.Center
         ' 
         ' Button1
         ' 

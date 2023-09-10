@@ -33,11 +33,11 @@ Partial Class Enunciado4
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Myanmar Text", 14F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(339, 43)
+        Label1.Location = New Point(268, 49)
         Label1.Name = "Label1"
-        Label1.Size = New Size(275, 50)
+        Label1.Size = New Size(451, 50)
         Label1.TabIndex = 0
-        Label1.Text = " Conjetura de Ulam"
+        Label1.Text = " Enunciado 4: Conjetura de Ulam"
         ' 
         ' Label2
         ' 
