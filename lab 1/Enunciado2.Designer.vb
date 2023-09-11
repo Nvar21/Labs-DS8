@@ -28,8 +28,31 @@ Partial Class Enunciado2
         Label6 = New Label()
         txtGenero = New TextBox()
         txtEdad = New TextBox()
-        bntRegistrar = New Button()
+        btnRegistrar = New Button()
         btnCalcular = New Button()
+        Label2 = New Label()
+        Label5 = New Label()
+        Label7 = New Label()
+        lblHombres = New Label()
+        lblMujeres = New Label()
+        gpbResultados = New GroupBox()
+        lblTotMujeres = New Label()
+        lblTotHombres = New Label()
+        Label11 = New Label()
+        Label10 = New Label()
+        Label9 = New Label()
+        Label8 = New Label()
+        lblIndicador = New Label()
+        gpbTotales = New GroupBox()
+        txtListaMujeres = New TextBox()
+        txtListaHombres = New TextBox()
+        Label12 = New Label()
+        Label14 = New Label()
+        Label16 = New Label()
+        Label13 = New Label()
+        lblGenero = New Label()
+        gpbResultados.SuspendLayout()
+        gpbTotales.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label1
@@ -41,13 +64,13 @@ Partial Class Enunciado2
         Label1.Name = "Label1"
         Label1.Size = New Size(596, 34)
         Label1.TabIndex = 0
-        Label1.Text = "Enunciado 2 - Registro de accidentes automovilisticos por genero"
+        Label1.Text = "Enunciado 2 - Registro de accidentes automovilísticos por genero"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
         Label3.FlatStyle = FlatStyle.System
-        Label3.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.Location = New Point(22, 53)
         Label3.Name = "Label3"
         Label3.Size = New Size(257, 29)
@@ -58,7 +81,7 @@ Partial Class Enunciado2
         ' 
         Label4.AutoSize = True
         Label4.FlatStyle = FlatStyle.System
-        Label4.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.Location = New Point(22, 79)
         Label4.Name = "Label4"
         Label4.Size = New Size(413, 29)
@@ -69,7 +92,7 @@ Partial Class Enunciado2
         ' 
         Label6.AutoSize = True
         Label6.FlatStyle = FlatStyle.System
-        Label6.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label6.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label6.Location = New Point(22, 121)
         Label6.Name = "Label6"
         Label6.Size = New Size(259, 29)
@@ -93,32 +116,264 @@ Partial Class Enunciado2
         txtEdad.Size = New Size(100, 23)
         txtEdad.TabIndex = 9
         ' 
-        ' bntRegistrar
+        ' btnRegistrar
         ' 
-        bntRegistrar.Location = New Point(178, 189)
-        bntRegistrar.Name = "bntRegistrar"
-        bntRegistrar.Size = New Size(103, 23)
-        bntRegistrar.TabIndex = 10
-        bntRegistrar.Text = "Añadir Registro"
-        bntRegistrar.UseVisualStyleBackColor = True
+        btnRegistrar.Enabled = False
+        btnRegistrar.Location = New Point(176, 166)
+        btnRegistrar.Name = "btnRegistrar"
+        btnRegistrar.Size = New Size(103, 23)
+        btnRegistrar.TabIndex = 10
+        btnRegistrar.Text = "Añadir Registro"
+        btnRegistrar.UseVisualStyleBackColor = True
         ' 
         ' btnCalcular
         ' 
         btnCalcular.Enabled = False
-        btnCalcular.Location = New Point(323, 189)
+        btnCalcular.Location = New Point(323, 166)
         btnCalcular.Name = "btnCalcular"
         btnCalcular.Size = New Size(122, 23)
         btnCalcular.TabIndex = 11
         btnCalcular.Text = "Obtener Estadísticas"
         btnCalcular.UseVisualStyleBackColor = True
         ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.Location = New Point(45, 67)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(206, 29)
+        Label2.TabIndex = 12
+        Label2.Text = "Porcentaje de Accidentados:"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label5.Location = New Point(257, 48)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(224, 29)
+        Label5.TabIndex = 13
+        Label5.Text = "Hombres mayores de 40 años:"
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label7.Location = New Point(257, 77)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(226, 29)
+        Label7.TabIndex = 14
+        Label7.Text = "Mujeres de entre 18 y 25 años:"
+        ' 
+        ' lblHombres
+        ' 
+        lblHombres.AutoSize = True
+        lblHombres.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblHombres.Location = New Point(496, 48)
+        lblHombres.Name = "lblHombres"
+        lblHombres.Size = New Size(22, 29)
+        lblHombres.TabIndex = 15
+        lblHombres.Text = "0"
+        ' 
+        ' lblMujeres
+        ' 
+        lblMujeres.AutoSize = True
+        lblMujeres.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblMujeres.Location = New Point(496, 77)
+        lblMujeres.Name = "lblMujeres"
+        lblMujeres.Size = New Size(22, 29)
+        lblMujeres.TabIndex = 16
+        lblMujeres.Text = "0"
+        ' 
+        ' gpbResultados
+        ' 
+        gpbResultados.Controls.Add(lblTotMujeres)
+        gpbResultados.Controls.Add(lblTotHombres)
+        gpbResultados.Controls.Add(Label11)
+        gpbResultados.Controls.Add(Label10)
+        gpbResultados.Controls.Add(Label9)
+        gpbResultados.Controls.Add(Label8)
+        gpbResultados.Controls.Add(Label7)
+        gpbResultados.Controls.Add(lblMujeres)
+        gpbResultados.Controls.Add(Label2)
+        gpbResultados.Controls.Add(lblHombres)
+        gpbResultados.Controls.Add(Label5)
+        gpbResultados.Location = New Point(28, 298)
+        gpbResultados.Name = "gpbResultados"
+        gpbResultados.Size = New Size(617, 113)
+        gpbResultados.TabIndex = 17
+        gpbResultados.TabStop = False
+        gpbResultados.Text = "Resultados"
+        gpbResultados.Visible = False
+        ' 
+        ' lblTotMujeres
+        ' 
+        lblTotMujeres.AutoSize = True
+        lblTotMujeres.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTotMujeres.Location = New Point(476, 19)
+        lblTotMujeres.Name = "lblTotMujeres"
+        lblTotMujeres.Size = New Size(22, 29)
+        lblTotMujeres.TabIndex = 22
+        lblTotMujeres.Text = "0"
+        ' 
+        ' lblTotHombres
+        ' 
+        lblTotHombres.AutoSize = True
+        lblTotHombres.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTotHombres.Location = New Point(249, 19)
+        lblTotHombres.Name = "lblTotHombres"
+        lblTotHombres.Size = New Size(22, 29)
+        lblTotHombres.TabIndex = 21
+        lblTotHombres.Text = "0"
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label11.Location = New Point(352, 19)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(110, 29)
+        Label11.TabIndex = 20
+        Label11.Text = "Total Mujeres:"
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label10.Location = New Point(125, 19)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(118, 29)
+        Label10.TabIndex = 19
+        Label10.Text = "Total Hombres:"
+        ' 
+        ' Label9
+        ' 
+        Label9.AutoSize = True
+        Label9.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label9.Location = New Point(537, 77)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(26, 29)
+        Label9.TabIndex = 18
+        Label9.Text = "%"
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label8.Location = New Point(537, 48)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(26, 29)
+        Label8.TabIndex = 17
+        Label8.Text = "%"
+        ' 
+        ' lblIndicador
+        ' 
+        lblIndicador.AutoSize = True
+        lblIndicador.BackColor = SystemColors.ActiveBorder
+        lblIndicador.Font = New Font("Myanmar Text", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        lblIndicador.ForeColor = Color.LawnGreen
+        lblIndicador.Location = New Point(196, 192)
+        lblIndicador.Name = "lblIndicador"
+        lblIndicador.Size = New Size(216, 25)
+        lblIndicador.TabIndex = 18
+        lblIndicador.Text = "Registro Exitoso, puede continuar"
+        lblIndicador.Visible = False
+        ' 
+        ' gpbTotales
+        ' 
+        gpbTotales.Controls.Add(txtListaMujeres)
+        gpbTotales.Controls.Add(txtListaHombres)
+        gpbTotales.Controls.Add(Label12)
+        gpbTotales.Controls.Add(Label14)
+        gpbTotales.Controls.Add(Label16)
+        gpbTotales.Location = New Point(28, 192)
+        gpbTotales.Name = "gpbTotales"
+        gpbTotales.Size = New Size(617, 100)
+        gpbTotales.TabIndex = 19
+        gpbTotales.TabStop = False
+        gpbTotales.Text = "Total Accidentados"
+        gpbTotales.Visible = False
+        ' 
+        ' txtListaMujeres
+        ' 
+        txtListaMujeres.Location = New Point(274, 59)
+        txtListaMujeres.Name = "txtListaMujeres"
+        txtListaMujeres.ReadOnly = True
+        txtListaMujeres.Size = New Size(334, 23)
+        txtListaMujeres.TabIndex = 21
+        ' 
+        ' txtListaHombres
+        ' 
+        txtListaHombres.Location = New Point(273, 27)
+        txtListaHombres.Name = "txtListaHombres"
+        txtListaHombres.ReadOnly = True
+        txtListaHombres.Size = New Size(335, 23)
+        txtListaHombres.TabIndex = 20
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label12.Location = New Point(199, 56)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(69, 29)
+        Label12.TabIndex = 14
+        Label12.Text = "Mujeres"
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label14.Location = New Point(31, 46)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(162, 29)
+        Label14.TabIndex = 12
+        Label14.Text = "Lista de Accidentados"
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label16.Location = New Point(199, 27)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(77, 29)
+        Label16.TabIndex = 13
+        Label16.Text = "Hombres"
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.FlatStyle = FlatStyle.System
+        Label13.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label13.Location = New Point(391, 53)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(76, 29)
+        Label13.TabIndex = 20
+        Label13.Text = "Género: "
+        ' 
+        ' lblGenero
+        ' 
+        lblGenero.AutoSize = True
+        lblGenero.FlatStyle = FlatStyle.System
+        lblGenero.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        lblGenero.Location = New Point(459, 53)
+        lblGenero.Name = "lblGenero"
+        lblGenero.Size = New Size(0, 29)
+        lblGenero.TabIndex = 21
+        ' 
         ' Enunciado2
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(609, 293)
+        ClientSize = New Size(648, 418)
+        Controls.Add(lblGenero)
+        Controls.Add(Label13)
+        Controls.Add(gpbTotales)
+        Controls.Add(lblIndicador)
+        Controls.Add(gpbResultados)
         Controls.Add(btnCalcular)
-        Controls.Add(bntRegistrar)
+        Controls.Add(btnRegistrar)
         Controls.Add(txtEdad)
         Controls.Add(txtGenero)
         Controls.Add(Label6)
@@ -127,7 +382,11 @@ Partial Class Enunciado2
         Controls.Add(Label1)
         Margin = New Padding(3, 2, 3, 2)
         Name = "Enunciado2"
-        Text = "Enunciado2"
+        Text = "Enunciado 2"
+        gpbResultados.ResumeLayout(False)
+        gpbResultados.PerformLayout()
+        gpbTotales.ResumeLayout(False)
+        gpbTotales.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -138,6 +397,27 @@ Partial Class Enunciado2
     Friend WithEvents Label6 As Label
     Friend WithEvents txtGenero As TextBox
     Friend WithEvents txtEdad As TextBox
-    Friend WithEvents bntRegistrar As Button
+    Friend WithEvents btnRegistrar As Button
     Friend WithEvents btnCalcular As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents lblHombres As Label
+    Friend WithEvents lblMujeres As Label
+    Friend WithEvents gpbResultados As GroupBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents lblIndicador As Label
+    Friend WithEvents gpbTotales As GroupBox
+    Friend WithEvents txtListaMujeres As TextBox
+    Friend WithEvents txtListaHombres As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents lblTotMujeres As Label
+    Friend WithEvents lblTotHombres As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents lblGenero As Label
 End Class
