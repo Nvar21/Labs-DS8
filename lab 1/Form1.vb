@@ -17,7 +17,7 @@
     End Sub
 
     Private Sub btnEnun5_Click(sender As Object, e As EventArgs) Handles btnEnun5.Click
-
+        Enunciado5.Show()
     End Sub
 
     Private Sub btnEnun6_Click(sender As Object, e As EventArgs) Handles btnEnun6.Click
