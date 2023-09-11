@@ -255,7 +255,7 @@ Partial Class Enunciado5
         Controls.Add(gpbMetodos)
         Controls.Add(Label1)
         Name = "Enunciado5"
-        Text = "z"
+        Text = "Enunciado 5"
         gpbMetodos.ResumeLayout(False)
         gpbMetodos.PerformLayout()
         GroupBox1.ResumeLayout(False)
