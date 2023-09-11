@@ -209,7 +209,6 @@ Partial Class Enunciado2
         gpbResultados.TabIndex = 17
         gpbResultados.TabStop = False
         gpbResultados.Text = "Resultados"
-        gpbResultados.Visible = False
         ' 
         ' lblTotMujeres
         ' 
@@ -299,7 +298,6 @@ Partial Class Enunciado2
         gpbTotales.TabIndex = 19
         gpbTotales.TabStop = False
         gpbTotales.Text = "Total Accidentados"
-        gpbTotales.Visible = False
         ' 
         ' txtListaMujeres
         ' 
@@ -365,7 +363,7 @@ Partial Class Enunciado2
         lblGenero.AutoSize = True
         lblGenero.FlatStyle = FlatStyle.System
         lblGenero.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
-        lblGenero.Location = New Point(402, 40)
+        lblGenero.Location = New Point(458, 51)
         lblGenero.Name = "lblGenero"
         lblGenero.Size = New Size(0, 29)
         lblGenero.TabIndex = 21

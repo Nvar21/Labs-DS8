@@ -90,8 +90,6 @@ Public Class Enunciado2
 
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
         lblIndicador.Visible = False
-        gpbTotales.Visible = True ' Para hacer el GroupBox visible
-        gpbResultados.Visible = True ' Para hacer el GroupBox visible
         Dim hombres_mayores_40 As Integer = 0
         Dim mujeres_rango_18a25 As Integer = 0
 
@@ -136,10 +134,4 @@ Public Class Enunciado2
 
     End Sub
 
-    Private Sub txtListaMujeres_TextChanged(sender As Object, e As EventArgs) Handles txtListaMujeres.TextChanged
-
-    End Sub
-
-    Private Sub txtListaHombres_TextChanged(sender As Object, e As EventArgs) Handles txtListaHombres.TextChanged
-    End Sub
 End Class
