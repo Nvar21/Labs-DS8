@@ -35,10 +35,9 @@ Partial Class Form1
         ' btnEnun1
         ' 
         btnEnun1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        btnEnun1.Location = New Point(59, 71)
-        btnEnun1.Margin = New Padding(3, 4, 3, 4)
+        btnEnun1.Location = New Point(52, 53)
         btnEnun1.Name = "btnEnun1"
-        btnEnun1.Size = New Size(137, 41)
+        btnEnun1.Size = New Size(120, 31)
         btnEnun1.TabIndex = 0
         btnEnun1.Text = "Enunciado 1"
         btnEnun1.UseVisualStyleBackColor = True
@@ -46,10 +45,9 @@ Partial Class Form1
         ' btnEnun2
         ' 
         btnEnun2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        btnEnun2.Location = New Point(267, 71)
-        btnEnun2.Margin = New Padding(3, 4, 3, 4)
+        btnEnun2.Location = New Point(234, 53)
         btnEnun2.Name = "btnEnun2"
-        btnEnun2.Size = New Size(137, 41)
+        btnEnun2.Size = New Size(120, 31)
         btnEnun2.TabIndex = 1
         btnEnun2.Text = "Enunciado 2"
         btnEnun2.UseVisualStyleBackColor = True
@@ -63,9 +61,11 @@ Partial Class Form1
         GroupBox1.Controls.Add(btnEnun1)
         GroupBox1.Controls.Add(btnEnun2)
         GroupBox1.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point)
-        GroupBox1.Location = New Point(178, 101)
+        GroupBox1.Location = New Point(156, 76)
+        GroupBox1.Margin = New Padding(3, 2, 3, 2)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(465, 356)
+        GroupBox1.Padding = New Padding(3, 2, 3, 2)
+        GroupBox1.Size = New Size(407, 267)
         GroupBox1.TabIndex = 2
         GroupBox1.TabStop = False
         GroupBox1.Text = "Laboratorio 1"
@@ -73,10 +73,9 @@ Partial Class Form1
         ' btnEnun6
         ' 
         btnEnun6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        btnEnun6.Location = New Point(267, 272)
-        btnEnun6.Margin = New Padding(3, 4, 3, 4)
+        btnEnun6.Location = New Point(234, 204)
         btnEnun6.Name = "btnEnun6"
-        btnEnun6.Size = New Size(137, 41)
+        btnEnun6.Size = New Size(120, 31)
         btnEnun6.TabIndex = 5
         btnEnun6.Text = "Enunciado 6"
         btnEnun6.UseVisualStyleBackColor = True
@@ -84,10 +83,9 @@ Partial Class Form1
         ' btnEnun4
         ' 
         btnEnun4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        btnEnun4.Location = New Point(267, 170)
-        btnEnun4.Margin = New Padding(3, 4, 3, 4)
+        btnEnun4.Location = New Point(234, 128)
         btnEnun4.Name = "btnEnun4"
-        btnEnun4.Size = New Size(137, 41)
+        btnEnun4.Size = New Size(120, 31)
         btnEnun4.TabIndex = 3
         btnEnun4.Text = "Enunciado 4"
         btnEnun4.UseVisualStyleBackColor = True
@@ -95,10 +93,9 @@ Partial Class Form1
         ' btnEnun5
         ' 
         btnEnun5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        btnEnun5.Location = New Point(59, 272)
-        btnEnun5.Margin = New Padding(3, 4, 3, 4)
+        btnEnun5.Location = New Point(52, 204)
         btnEnun5.Name = "btnEnun5"
-        btnEnun5.Size = New Size(137, 41)
+        btnEnun5.Size = New Size(120, 31)
         btnEnun5.TabIndex = 4
         btnEnun5.Text = "Enunciado 5"
         btnEnun5.UseVisualStyleBackColor = True
@@ -106,23 +103,21 @@ Partial Class Form1
         ' btnEnun3
         ' 
         btnEnun3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        btnEnun3.Location = New Point(59, 170)
-        btnEnun3.Margin = New Padding(3, 4, 3, 4)
+        btnEnun3.Location = New Point(52, 128)
         btnEnun3.Name = "btnEnun3"
-        btnEnun3.Size = New Size(137, 41)
+        btnEnun3.Size = New Size(120, 31)
         btnEnun3.TabIndex = 2
         btnEnun3.Text = "Enunciado 3"
         btnEnun3.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(914, 600)
+        ClientSize = New Size(800, 450)
         Controls.Add(GroupBox1)
-        Margin = New Padding(3, 4, 3, 4)
         Name = "Form1"
-        Text = "Form1"
+        Text = "Menú Laboratorio 1"
         GroupBox1.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
