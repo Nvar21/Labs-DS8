@@ -135,4 +135,11 @@ Public Class Enunciado2
 
 
     End Sub
+
+    Private Sub txtListaMujeres_TextChanged(sender As Object, e As EventArgs) Handles txtListaMujeres.TextChanged
+
+    End Sub
+
+    Private Sub txtListaHombres_TextChanged(sender As Object, e As EventArgs) Handles txtListaHombres.TextChanged
+    End Sub
 End Class

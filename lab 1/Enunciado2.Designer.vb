@@ -1,4 +1,5 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Enunciado2
     Inherits System.Windows.Forms.Form
 
@@ -60,9 +61,9 @@ Partial Class Enunciado2
         Label1.AutoSize = True
         Label1.FlatStyle = FlatStyle.System
         Label1.Font = New Font("Myanmar Text", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(14, 12)
+        Label1.Location = New Point(12, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(772, 43)
+        Label1.Size = New Size(596, 34)
         Label1.TabIndex = 0
         Label1.Text = "Enunciado 2 - Registro de accidentes automovilísticos por genero"
         ' 
@@ -73,7 +74,7 @@ Partial Class Enunciado2
         Label3.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.Location = New Point(22, 53)
         Label3.Name = "Label3"
-        Label3.Size = New Size(317, 36)
+        Label3.Size = New Size(257, 29)
         Label3.TabIndex = 3
         Label3.Text = "Ingrese género del accidentado:"
         ' 
@@ -84,7 +85,7 @@ Partial Class Enunciado2
         Label4.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.Location = New Point(22, 79)
         Label4.Name = "Label4"
-        Label4.Size = New Size(515, 36)
+        Label4.Size = New Size(413, 29)
         Label4.TabIndex = 5
         Label4.Text = "(1 para Mujer / 2 para Hombre / 0 para finalizar registros)"
         ' 
@@ -95,44 +96,44 @@ Partial Class Enunciado2
         Label6.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label6.Location = New Point(22, 121)
         Label6.Name = "Label6"
-        Label6.Size = New Size(320, 36)
+        Label6.Size = New Size(259, 29)
         Label6.TabIndex = 6
         Label6.Text = "Ingrese la edad del accidentado:"
         ' 
         ' txtGenero
         ' 
-        txtGenero.Location = New Point(326, 71)
-        txtGenero.Margin = New Padding(3, 4, 3, 4)
+        txtGenero.Location = New Point(285, 53)
         txtGenero.MaxLength = 1
         txtGenero.Name = "txtGenero"
         txtGenero.PlaceholderText = "0, 1 o 2"
-        txtGenero.Size = New Size(114, 27)
+        txtGenero.Size = New Size(100, 23)
         txtGenero.TabIndex = 2
         txtGenero.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtEdad
         ' 
-        txtEdad.Location = New Point(326, 161)
-        txtEdad.Margin = New Padding(3, 4, 3, 4)
+        txtEdad.Location = New Point(285, 121)
         txtEdad.Name = "txtEdad"
-        txtEdad.Size = New Size(114, 27)
+        txtEdad.Size = New Size(100, 23)
         txtEdad.TabIndex = 9
         ' 
         ' btnRegistrar
         ' 
-        bntRegistrar.Location = New Point(178, 189)
-        bntRegistrar.Name = "bntRegistrar"
-        bntRegistrar.Size = New Size(103, 23)
-        bntRegistrar.TabIndex = 10
-        bntRegistrar.Text = "Añadir Registro"
-        bntRegistrar.UseVisualStyleBackColor = True
+        btnRegistrar.Enabled = False
+        btnRegistrar.Location = New Point(172, 189)
+        btnRegistrar.Margin = New Padding(3, 2, 3, 2)
+        btnRegistrar.Name = "btnRegistrar"
+        btnRegistrar.Size = New Size(90, 23)
+        btnRegistrar.TabIndex = 10
+        btnRegistrar.Text = "Añadir Registro"
+        btnRegistrar.UseVisualStyleBackColor = True
         ' 
         ' btnCalcular
         ' 
         btnCalcular.Enabled = False
-        btnCalcular.Location = New Point(323, 189)
+        btnCalcular.Location = New Point(313, 189)
         btnCalcular.Name = "btnCalcular"
-        btnCalcular.Size = New Size(139, 31)
+        btnCalcular.Size = New Size(122, 23)
         btnCalcular.TabIndex = 11
         btnCalcular.Text = "Obtener Estadísticas"
         btnCalcular.UseVisualStyleBackColor = True
@@ -141,7 +142,7 @@ Partial Class Enunciado2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.Location = New Point(45, 67)
+        Label2.Location = New Point(39, 50)
         Label2.Name = "Label2"
         Label2.Size = New Size(206, 29)
         Label2.TabIndex = 12
@@ -151,7 +152,7 @@ Partial Class Enunciado2
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        Label5.Location = New Point(257, 48)
+        Label5.Location = New Point(246, 43)
         Label5.Name = "Label5"
         Label5.Size = New Size(224, 29)
         Label5.TabIndex = 13
@@ -161,7 +162,7 @@ Partial Class Enunciado2
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        Label7.Location = New Point(257, 77)
+        Label7.Location = New Point(246, 65)
         Label7.Name = "Label7"
         Label7.Size = New Size(226, 29)
         Label7.TabIndex = 14
@@ -171,7 +172,7 @@ Partial Class Enunciado2
         ' 
         lblHombres.AutoSize = True
         lblHombres.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        lblHombres.Location = New Point(496, 48)
+        lblHombres.Location = New Point(484, 43)
         lblHombres.Name = "lblHombres"
         lblHombres.Size = New Size(22, 29)
         lblHombres.TabIndex = 15
@@ -181,7 +182,7 @@ Partial Class Enunciado2
         ' 
         lblMujeres.AutoSize = True
         lblMujeres.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        lblMujeres.Location = New Point(496, 77)
+        lblMujeres.Location = New Point(484, 65)
         lblMujeres.Name = "lblMujeres"
         lblMujeres.Size = New Size(22, 29)
         lblMujeres.TabIndex = 16
@@ -200,9 +201,11 @@ Partial Class Enunciado2
         gpbResultados.Controls.Add(Label2)
         gpbResultados.Controls.Add(lblHombres)
         gpbResultados.Controls.Add(Label5)
-        gpbResultados.Location = New Point(28, 298)
+        gpbResultados.Location = New Point(24, 319)
+        gpbResultados.Margin = New Padding(3, 2, 3, 2)
         gpbResultados.Name = "gpbResultados"
-        gpbResultados.Size = New Size(617, 113)
+        gpbResultados.Padding = New Padding(3, 2, 3, 2)
+        gpbResultados.Size = New Size(602, 107)
         gpbResultados.TabIndex = 17
         gpbResultados.TabStop = False
         gpbResultados.Text = "Resultados"
@@ -212,7 +215,7 @@ Partial Class Enunciado2
         ' 
         lblTotMujeres.AutoSize = True
         lblTotMujeres.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        lblTotMujeres.Location = New Point(476, 19)
+        lblTotMujeres.Location = New Point(416, 14)
         lblTotMujeres.Name = "lblTotMujeres"
         lblTotMujeres.Size = New Size(22, 29)
         lblTotMujeres.TabIndex = 22
@@ -222,7 +225,7 @@ Partial Class Enunciado2
         ' 
         lblTotHombres.AutoSize = True
         lblTotHombres.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        lblTotHombres.Location = New Point(249, 19)
+        lblTotHombres.Location = New Point(218, 14)
         lblTotHombres.Name = "lblTotHombres"
         lblTotHombres.Size = New Size(22, 29)
         lblTotHombres.TabIndex = 21
@@ -232,7 +235,7 @@ Partial Class Enunciado2
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        Label11.Location = New Point(352, 19)
+        Label11.Location = New Point(308, 14)
         Label11.Name = "Label11"
         Label11.Size = New Size(110, 29)
         Label11.TabIndex = 20
@@ -242,7 +245,7 @@ Partial Class Enunciado2
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        Label10.Location = New Point(125, 19)
+        Label10.Location = New Point(109, 14)
         Label10.Name = "Label10"
         Label10.Size = New Size(118, 29)
         Label10.TabIndex = 19
@@ -252,7 +255,7 @@ Partial Class Enunciado2
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        Label9.Location = New Point(537, 77)
+        Label9.Location = New Point(530, 65)
         Label9.Name = "Label9"
         Label9.Size = New Size(26, 29)
         Label9.TabIndex = 18
@@ -262,7 +265,7 @@ Partial Class Enunciado2
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        Label8.Location = New Point(537, 48)
+        Label8.Location = New Point(530, 43)
         Label8.Name = "Label8"
         Label8.Size = New Size(26, 29)
         Label8.TabIndex = 17
@@ -271,12 +274,12 @@ Partial Class Enunciado2
         ' lblIndicador
         ' 
         lblIndicador.AutoSize = True
-        lblIndicador.BackColor = SystemColors.ActiveBorder
-        lblIndicador.Font = New Font("Myanmar Text", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
+        lblIndicador.BackColor = SystemColors.ControlDark
+        lblIndicador.Font = New Font("Myanmar Text", 11.0F, FontStyle.Regular, GraphicsUnit.Point)
         lblIndicador.ForeColor = Color.LawnGreen
-        lblIndicador.Location = New Point(196, 192)
+        lblIndicador.Location = New Point(186, 161)
         lblIndicador.Name = "lblIndicador"
-        lblIndicador.Size = New Size(216, 25)
+        lblIndicador.Size = New Size(234, 27)
         lblIndicador.TabIndex = 18
         lblIndicador.Text = "Registro Exitoso, puede continuar"
         lblIndicador.Visible = False
@@ -288,9 +291,11 @@ Partial Class Enunciado2
         gpbTotales.Controls.Add(Label12)
         gpbTotales.Controls.Add(Label14)
         gpbTotales.Controls.Add(Label16)
-        gpbTotales.Location = New Point(28, 192)
+        gpbTotales.Location = New Point(24, 231)
+        gpbTotales.Margin = New Padding(3, 2, 3, 2)
         gpbTotales.Name = "gpbTotales"
-        gpbTotales.Size = New Size(617, 100)
+        gpbTotales.Padding = New Padding(3, 2, 3, 2)
+        gpbTotales.Size = New Size(602, 75)
         gpbTotales.TabIndex = 19
         gpbTotales.TabStop = False
         gpbTotales.Text = "Total Accidentados"
@@ -298,25 +303,27 @@ Partial Class Enunciado2
         ' 
         ' txtListaMujeres
         ' 
-        txtListaMujeres.Location = New Point(274, 59)
+        txtListaMujeres.Location = New Point(303, 44)
+        txtListaMujeres.Margin = New Padding(3, 2, 3, 2)
         txtListaMujeres.Name = "txtListaMujeres"
         txtListaMujeres.ReadOnly = True
-        txtListaMujeres.Size = New Size(334, 23)
+        txtListaMujeres.Size = New Size(293, 23)
         txtListaMujeres.TabIndex = 21
         ' 
         ' txtListaHombres
         ' 
-        txtListaHombres.Location = New Point(273, 27)
+        txtListaHombres.Location = New Point(302, 20)
+        txtListaHombres.Margin = New Padding(3, 2, 3, 2)
         txtListaHombres.Name = "txtListaHombres"
         txtListaHombres.ReadOnly = True
-        txtListaHombres.Size = New Size(335, 23)
+        txtListaHombres.Size = New Size(294, 23)
         txtListaHombres.TabIndex = 20
         ' 
         ' Label12
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        Label12.Location = New Point(199, 56)
+        Label12.Location = New Point(226, 42)
         Label12.Name = "Label12"
         Label12.Size = New Size(69, 29)
         Label12.TabIndex = 14
@@ -326,7 +333,7 @@ Partial Class Enunciado2
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        Label14.Location = New Point(31, 46)
+        Label14.Location = New Point(27, 34)
         Label14.Name = "Label14"
         Label14.Size = New Size(162, 29)
         Label14.TabIndex = 12
@@ -336,7 +343,7 @@ Partial Class Enunciado2
         ' 
         Label16.AutoSize = True
         Label16.Font = New Font("Myanmar Text", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        Label16.Location = New Point(199, 27)
+        Label16.Location = New Point(218, 20)
         Label16.Name = "Label16"
         Label16.Size = New Size(77, 29)
         Label16.TabIndex = 13
@@ -347,7 +354,7 @@ Partial Class Enunciado2
         Label13.AutoSize = True
         Label13.FlatStyle = FlatStyle.System
         Label13.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
-        Label13.Location = New Point(391, 53)
+        Label13.Location = New Point(391, 50)
         Label13.Name = "Label13"
         Label13.Size = New Size(76, 29)
         Label13.TabIndex = 20
@@ -358,7 +365,7 @@ Partial Class Enunciado2
         lblGenero.AutoSize = True
         lblGenero.FlatStyle = FlatStyle.System
         lblGenero.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
-        lblGenero.Location = New Point(459, 53)
+        lblGenero.Location = New Point(402, 40)
         lblGenero.Name = "lblGenero"
         lblGenero.Size = New Size(0, 29)
         lblGenero.TabIndex = 21
@@ -367,7 +374,12 @@ Partial Class Enunciado2
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(609, 293)
+        ClientSize = New Size(638, 441)
+        Controls.Add(lblGenero)
+        Controls.Add(Label13)
+        Controls.Add(gpbTotales)
+        Controls.Add(lblIndicador)
+        Controls.Add(gpbResultados)
         Controls.Add(btnCalcular)
         Controls.Add(btnRegistrar)
         Controls.Add(txtEdad)
@@ -376,6 +388,7 @@ Partial Class Enunciado2
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(Label1)
+        Margin = New Padding(3, 2, 3, 2)
         Name = "Enunciado2"
         Text = "Enunciado 2"
         gpbResultados.ResumeLayout(False)
