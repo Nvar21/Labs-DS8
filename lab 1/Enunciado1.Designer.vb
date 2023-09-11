@@ -34,12 +34,12 @@ Partial Class Enunciado1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Myanmar Text", 14F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(365, 60)
+        Label1.Location = New Point(302, 63)
         Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(286, 50)
+        Label1.Size = New Size(462, 50)
         Label1.TabIndex = 0
-        Label1.Text = "Costo del automóvil"
+        Label1.Text = "Enunciado 1: Costo del automóvil"
         ' 
         ' Label2
         ' 
@@ -59,6 +59,7 @@ Partial Class Enunciado1
         txtCosto.Name = "txtCosto"
         txtCosto.Size = New Size(150, 45)
         txtCosto.TabIndex = 2
+        txtCosto.TextAlign = HorizontalAlignment.Center
         ' 
         ' Label3
         ' 
@@ -79,6 +80,7 @@ Partial Class Enunciado1
         txtResult.ReadOnly = True
         txtResult.Size = New Size(150, 45)
         txtResult.TabIndex = 4
+        txtResult.TextAlign = HorizontalAlignment.Center
         ' 
         ' Button1
         ' 
