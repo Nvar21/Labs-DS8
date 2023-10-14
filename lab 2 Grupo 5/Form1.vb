@@ -16,8 +16,8 @@
         Dim formulario As Form = Nothing
 
         Select Case e.ClickedItem.Name
-                'Case "smiEnun1"
-                '    formulario = New frmEnunciado1()
+            Case "smiEnun1"
+                formulario = New frmEnunciado1()
             Case "smiEnun2"
                 formulario = New frmEnunciado2()
                 'Case "smiEnun3"
