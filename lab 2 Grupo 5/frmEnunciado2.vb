@@ -1,4 +1,5 @@
-﻿Imports System.Runtime.CompilerServices
+﻿Imports System.Diagnostics.Eventing.Reader
+Imports System.Runtime.CompilerServices
 
 Public Class frmEnunciado2
     Dim objTemperaturas As New Temperaturas
@@ -8,6 +9,7 @@ Public Class frmEnunciado2
         lblTitulo.Location = New Point((pnlTitulo.Width - lblTitulo.Width) \ 2, (pnlTitulo.Height - lblTitulo.Height) \ 2)
         lblLista.Location = New Point((pnlRegistros.Width - lblLista.Width) \ 2)
         lblLista.Location = New Point((pnlResultados.Width - lblLista.Width) \ 2, 6)
+        dgvResultados.Rows.Clear()
     End Sub
 
     'Para validar si el valor de temperatura es numérico
@@ -33,7 +35,8 @@ Public Class frmEnunciado2
                 lblIndicador.ForeColor = Color.FromArgb(255, 153, 102) 'Rojo de Incorrecto
                 btnRegister.Enabled = False
             End If
-            If txtTemp.Text = "0" And objTemperaturas.ObtenerTotal > 0 Then 'el txt no está vacío y tiene dentro un "0" (quiere parar de ingresar)
+            If txtTemp.Text = "0" And objTemperaturas.ObtenerTotal > 0 Then
+                'el txt no está vacío y tiene dentro un "0" (quiere parar de ingresar)
                 btnVerResult.Enabled = True
             Else
                 btnVerResult.Enabled = False
@@ -45,13 +48,28 @@ Public Class frmEnunciado2
 
     'para cuando se PUEDA ingresar una temperatura
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
-        Dim temp As Double = txtTemp.Text
-        objTemperaturas.añadirTemp(temp)
+        Dim temp As Double = CDbl(txtTemp.Text)
+        objTemperaturas.AñadirTemp(temp)
+        Dim registroNuevo As Double = objTemperaturas.ObtenerTemperatura(objTemperaturas.ObtenerTotal)
         txtContador.Text = objTemperaturas.ObtenerTotal()
-        dgvResultados.Rows.Add(objTemperaturas.ObtenerTotal, objTemperaturas.ObtenerTemperatura(objTemperaturas.ObtenerTotal))
+        dgvResultados.Rows.Add(objTemperaturas.ObtenerTotal, registroNuevo)
     End Sub
 
-    Private Sub btnVerResult_Click(sender As Object, e As EventArgs) Handles btnVerResult.Click
+    Private Sub dgvResultados_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles dgvResultados.CellFormatting
+        If e.RowIndex >= 0 AndAlso e.ColumnIndex = 0 Then ' Columna 1
+            Dim valor As Double = CDbl(dgvResultados.Rows(e.RowIndex).Cells(1).Value)
+
+            If valor <= 33 Or valor > 37 Then
+                dgvResultados.Rows(e.RowIndex).DefaultCellStyle.BackColor = Color.FromArgb(255, 153, 102) 'Rojo de Alerta
+            End If
+            If valor >= 37 And valor <= 37.2 Then
+                dgvResultados.Rows(e.RowIndex).DefaultCellStyle.BackColor = Color.FromArgb(153, 204, 51) 'Verde de Correcto
+            End If
+        End If
+    End Sub
+
+
+    Private Sub btnVerResult_Click(sender As Object, e As EventArgs) Handles btnVerResult.Click ' ya para ver resultados finales
         txtMay37.Text = objTemperaturas.ObtenerMay37
         txtmen33.Text = objTemperaturas.ObtenerMen33
     End Sub

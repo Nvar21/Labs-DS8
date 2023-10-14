@@ -43,4 +43,5 @@ Public Class Temperaturas
         Return lstTemperaturas(posicion - 1)
     End Function
 
+
 End Class

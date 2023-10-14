@@ -24,6 +24,7 @@ Partial Class frmEnunciado2
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         lblTitulo = New Label()
         gpbTotales = New GroupBox()
         txtListaMujeres = New TextBox()
@@ -329,7 +330,7 @@ Partial Class frmEnunciado2
         dgvResultados.CellBorderStyle = DataGridViewCellBorderStyle.Raised
         DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter
         DataGridViewCellStyle1.BackColor = SystemColors.Control
-        DataGridViewCellStyle1.Font = New Font("Roboto", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle1.Font = New Font("Roboto", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
         DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
         DataGridViewCellStyle1.SelectionBackColor = Color.Teal
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
@@ -337,6 +338,14 @@ Partial Class frmEnunciado2
         dgvResultados.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         dgvResultados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvResultados.Columns.AddRange(New DataGridViewColumn() {colNumero, colTemperatura})
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = SystemColors.Window
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        DataGridViewCellStyle2.ForeColor = Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = Color.Transparent
+        DataGridViewCellStyle2.SelectionForeColor = Color.Black
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
+        dgvResultados.DefaultCellStyle = DataGridViewCellStyle2
         dgvResultados.Dock = DockStyle.Top
         dgvResultados.GridColor = SystemColors.ActiveCaption
         dgvResultados.Location = New Point(0, 29)
