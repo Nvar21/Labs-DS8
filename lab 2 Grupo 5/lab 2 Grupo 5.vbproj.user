@@ -10,5 +10,8 @@
     <Compile Update="frmEnunciado2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmEnunciado3.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
