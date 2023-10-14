@@ -35,16 +35,16 @@ Partial Class frmEnunciado2
         pnlTitulo = New Panel()
         pnlRegistros = New Panel()
         Label5 = New Label()
-        TextBox1 = New TextBox()
+        txtContador = New TextBox()
         Label1 = New Label()
-        btnVerResult = New Button()
         btnRegister = New Button()
         Label3 = New Label()
         lblIndicador = New Label()
         txtTemp = New TextBox()
         lblIndicacion = New Label()
         pnlResultados = New Panel()
-        TextBox2 = New TextBox()
+        btnVerResult = New Button()
+        txtmen33 = New TextBox()
         Label4 = New Label()
         txtMay37 = New TextBox()
         dgvResultados = New DataGridView()
@@ -64,7 +64,7 @@ Partial Class frmEnunciado2
         lblTitulo.AutoSize = True
         lblTitulo.FlatStyle = FlatStyle.System
         lblTitulo.Font = New Font("Myanmar Text", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        lblTitulo.Location = New Point(0, 10)
+        lblTitulo.Location = New Point(14, 10)
         lblTitulo.Name = "lblTitulo"
         lblTitulo.Size = New Size(371, 34)
         lblTitulo.TabIndex = 0
@@ -156,9 +156,8 @@ Partial Class frmEnunciado2
         ' pnlRegistros
         ' 
         pnlRegistros.Controls.Add(Label5)
-        pnlRegistros.Controls.Add(TextBox1)
+        pnlRegistros.Controls.Add(txtContador)
         pnlRegistros.Controls.Add(Label1)
-        pnlRegistros.Controls.Add(btnVerResult)
         pnlRegistros.Controls.Add(btnRegister)
         pnlRegistros.Controls.Add(Label3)
         pnlRegistros.Controls.Add(lblIndicador)
@@ -167,7 +166,7 @@ Partial Class frmEnunciado2
         pnlRegistros.Dock = DockStyle.Top
         pnlRegistros.Location = New Point(20, 67)
         pnlRegistros.Name = "pnlRegistros"
-        pnlRegistros.Size = New Size(884, 249)
+        pnlRegistros.Size = New Size(884, 204)
         pnlRegistros.TabIndex = 26
         ' 
         ' Label5
@@ -181,15 +180,15 @@ Partial Class frmEnunciado2
         Label5.TabIndex = 34
         Label5.Text = "°C"
         ' 
-        ' TextBox1
+        ' txtContador
         ' 
-        TextBox1.Location = New Point(441, 134)
-        TextBox1.MaxLength = 1
-        TextBox1.Name = "TextBox1"
-        TextBox1.ReadOnly = True
-        TextBox1.Size = New Size(199, 23)
-        TextBox1.TabIndex = 33
-        TextBox1.TextAlign = HorizontalAlignment.Center
+        txtContador.Location = New Point(441, 134)
+        txtContador.MaxLength = 1
+        txtContador.Name = "txtContador"
+        txtContador.ReadOnly = True
+        txtContador.Size = New Size(199, 23)
+        txtContador.TabIndex = 33
+        txtContador.TextAlign = HorizontalAlignment.Center
         ' 
         ' Label1
         ' 
@@ -201,21 +200,6 @@ Partial Class frmEnunciado2
         Label1.Size = New Size(215, 29)
         Label1.TabIndex = 32
         Label1.Text = "Personas que han entrado:"
-        ' 
-        ' btnVerResult
-        ' 
-        btnVerResult.BackColor = Color.Teal
-        btnVerResult.Dock = DockStyle.Bottom
-        btnVerResult.FlatAppearance.BorderSize = 0
-        btnVerResult.FlatStyle = FlatStyle.Flat
-        btnVerResult.Font = New Font("Roboto", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        btnVerResult.ForeColor = Color.White
-        btnVerResult.Location = New Point(0, 222)
-        btnVerResult.Name = "btnVerResult"
-        btnVerResult.Size = New Size(884, 27)
-        btnVerResult.TabIndex = 31
-        btnVerResult.Text = "Ver Resultados"
-        btnVerResult.UseVisualStyleBackColor = False
         ' 
         ' btnRegister
         ' 
@@ -260,7 +244,7 @@ Partial Class frmEnunciado2
         ' txtTemp
         ' 
         txtTemp.Location = New Point(441, 15)
-        txtTemp.MaxLength = 3
+        txtTemp.MaxLength = 5
         txtTemp.Name = "txtTemp"
         txtTemp.Size = New Size(199, 23)
         txtTemp.TabIndex = 26
@@ -271,7 +255,7 @@ Partial Class frmEnunciado2
         lblIndicacion.AutoSize = True
         lblIndicacion.FlatStyle = FlatStyle.System
         lblIndicacion.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        lblIndicacion.Location = New Point(336, 190)
+        lblIndicacion.Location = New Point(230, 41)
         lblIndicacion.Name = "lblIndicacion"
         lblIndicacion.Size = New Size(246, 29)
         lblIndicacion.TabIndex = 28
@@ -279,34 +263,51 @@ Partial Class frmEnunciado2
         ' 
         ' pnlResultados
         ' 
-        pnlResultados.Controls.Add(TextBox2)
+        pnlResultados.Controls.Add(btnVerResult)
+        pnlResultados.Controls.Add(txtmen33)
         pnlResultados.Controls.Add(Label4)
         pnlResultados.Controls.Add(txtMay37)
         pnlResultados.Controls.Add(dgvResultados)
         pnlResultados.Controls.Add(Label2)
         pnlResultados.Controls.Add(lblLista)
         pnlResultados.Dock = DockStyle.Top
-        pnlResultados.Location = New Point(20, 316)
+        pnlResultados.Location = New Point(20, 271)
         pnlResultados.Name = "pnlResultados"
-        pnlResultados.Size = New Size(884, 303)
+        pnlResultados.Size = New Size(884, 349)
         pnlResultados.TabIndex = 27
         ' 
-        ' TextBox2
+        ' btnVerResult
         ' 
-        TextBox2.Location = New Point(525, 254)
-        TextBox2.MaxLength = 1
-        TextBox2.Name = "TextBox2"
-        TextBox2.ReadOnly = True
-        TextBox2.Size = New Size(115, 23)
-        TextBox2.TabIndex = 37
-        TextBox2.TextAlign = HorizontalAlignment.Center
+        btnVerResult.BackColor = Color.Teal
+        btnVerResult.Dock = DockStyle.Bottom
+        btnVerResult.Enabled = False
+        btnVerResult.FlatAppearance.BorderSize = 0
+        btnVerResult.FlatStyle = FlatStyle.Flat
+        btnVerResult.Font = New Font("Roboto", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        btnVerResult.ForeColor = Color.White
+        btnVerResult.Location = New Point(0, 322)
+        btnVerResult.Name = "btnVerResult"
+        btnVerResult.Size = New Size(884, 27)
+        btnVerResult.TabIndex = 38
+        btnVerResult.Text = "Ver Resultados"
+        btnVerResult.UseVisualStyleBackColor = False
+        ' 
+        ' txtmen33
+        ' 
+        txtmen33.Location = New Point(525, 290)
+        txtmen33.MaxLength = 1
+        txtmen33.Name = "txtmen33"
+        txtmen33.ReadOnly = True
+        txtmen33.Size = New Size(115, 23)
+        txtmen33.TabIndex = 37
+        txtmen33.TextAlign = HorizontalAlignment.Center
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.FlatStyle = FlatStyle.System
         Label4.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label4.Location = New Point(220, 252)
+        Label4.Location = New Point(220, 288)
         Label4.Name = "Label4"
         Label4.Size = New Size(311, 29)
         Label4.TabIndex = 36
@@ -314,7 +315,7 @@ Partial Class frmEnunciado2
         ' 
         ' txtMay37
         ' 
-        txtMay37.Location = New Point(525, 207)
+        txtMay37.Location = New Point(525, 243)
         txtMay37.MaxLength = 1
         txtMay37.Name = "txtMay37"
         txtMay37.ReadOnly = True
@@ -342,7 +343,7 @@ Partial Class frmEnunciado2
         dgvResultados.Name = "dgvResultados"
         dgvResultados.RowHeadersVisible = False
         dgvResultados.RowTemplate.Height = 25
-        dgvResultados.Size = New Size(884, 152)
+        dgvResultados.Size = New Size(884, 201)
         dgvResultados.TabIndex = 23
         ' 
         ' colNumero
@@ -362,7 +363,7 @@ Partial Class frmEnunciado2
         Label2.AutoSize = True
         Label2.FlatStyle = FlatStyle.System
         Label2.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(220, 205)
+        Label2.Location = New Point(220, 241)
         Label2.Name = "Label2"
         Label2.Size = New Size(310, 29)
         Label2.TabIndex = 34
@@ -416,7 +417,6 @@ Partial Class frmEnunciado2
     Friend WithEvents lblGenero As Label
     Friend WithEvents pnlTitulo As Panel
     Friend WithEvents pnlRegistros As Panel
-    Friend WithEvents btnVerResult As Button
     Friend WithEvents btnRegister As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents lblIndicador As Label
@@ -424,14 +424,15 @@ Partial Class frmEnunciado2
     Friend WithEvents lblIndicacion As Label
     Friend WithEvents pnlResultados As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtContador As TextBox
     Friend WithEvents lblLista As Label
     Friend WithEvents dgvResultados As DataGridView
     Friend WithEvents colNumero As DataGridViewTextBoxColumn
     Friend WithEvents colTemperatura As DataGridViewTextBoxColumn
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtmen33 As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txtMay37 As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents btnVerResult As Button
 End Class
