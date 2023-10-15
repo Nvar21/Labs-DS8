@@ -32,9 +32,10 @@ Partial Class frmEnunciado4
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(138, 131)
+        Label1.Location = New Point(277, 66)
+        Label1.Margin = New Padding(2, 0, 2, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(487, 32)
+        Label1.Size = New Size(324, 21)
         Label1.TabIndex = 0
         Label1.Text = "Enunciado 4 - Calcular la fecha de pascua"
         ' 
@@ -42,39 +43,43 @@ Partial Class frmEnunciado4
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(212, 221)
+        Label2.Location = New Point(328, 120)
+        Label2.Margin = New Padding(2, 0, 2, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(166, 32)
+        Label2.Size = New Size(109, 21)
         Label2.TabIndex = 1
         Label2.Text = "Ingresar año:"
         ' 
         ' txtYear
         ' 
         txtYear.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
-        txtYear.Location = New Point(402, 213)
+        txtYear.Location = New Point(461, 115)
+        txtYear.Margin = New Padding(2, 2, 2, 2)
         txtYear.Name = "txtYear"
-        txtYear.Size = New Size(150, 45)
+        txtYear.Size = New Size(106, 32)
         txtYear.TabIndex = 2
         ' 
         ' btnCalcular
         ' 
         btnCalcular.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        btnCalcular.Location = New Point(321, 301)
+        btnCalcular.Location = New Point(405, 168)
+        btnCalcular.Margin = New Padding(2, 2, 2, 2)
         btnCalcular.Name = "btnCalcular"
-        btnCalcular.Size = New Size(140, 43)
+        btnCalcular.Size = New Size(98, 26)
         btnCalcular.TabIndex = 3
         btnCalcular.Text = "Calcular"
         btnCalcular.UseVisualStyleBackColor = True
         ' 
         ' frmEnunciado4
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(793, 442)
+        ClientSize = New Size(924, 631)
         Controls.Add(btnCalcular)
         Controls.Add(txtYear)
         Controls.Add(Label2)
         Controls.Add(Label1)
+        Margin = New Padding(2, 2, 2, 2)
         Name = "frmEnunciado4"
         Text = "frmEnunciado4"
         ResumeLayout(False)

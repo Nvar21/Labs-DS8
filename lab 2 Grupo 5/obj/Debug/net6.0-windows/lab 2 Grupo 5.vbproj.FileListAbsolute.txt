@@ -39,3 +39,4 @@ C:\Users\gutie\source\repos\Nvar21\Labs-DS8\lab 2 Grupo 5\obj\Debug\net6.0-windo
 C:\Users\gutie\source\repos\Nvar21\Labs-DS8\lab 2 Grupo 5\obj\Debug\net6.0-windows\lab 2 Grupo 5.genruntimeconfig.cache
 C:\Users\gutie\source\repos\Nvar21\Labs-DS8\lab 2 Grupo 5\obj\Debug\net6.0-windows\ref\lab 2 Grupo 5.dll
 C:\Users\gutie\source\repos\Nvar21\Labs-DS8\lab 2 Grupo 5\obj\Debug\net6.0-windows\lab_2_Grupo_5.frmEnunciado4.resources
+C:\Users\Nelson\Pictures\nuevonuevonuevo repo\lab 2 Grupo 5\obj\Debug\net6.0-windows\lab_2_Grupo_5.frmEnunciado4.resources
