@@ -23,41 +23,33 @@ Partial Class frmEnunciado1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         lblTitulo = New Label()
-        gpbTotales = New GroupBox()
-        txtListaMujeres = New TextBox()
-        txtListaHombres = New TextBox()
-        Label12 = New Label()
-        Label14 = New Label()
-        Label16 = New Label()
         lblGenero = New Label()
         pnlTitulo = New Panel()
         pnlRegistros = New Panel()
-        Label5 = New Label()
-        txtContador = New TextBox()
-        Label1 = New Label()
-        btnRegister = New Button()
+        btnIniciar = New Button()
         Label3 = New Label()
-        lblIndicador = New Label()
-        txtTemp = New TextBox()
-        lblIndicacion = New Label()
+        txtNumVentas = New TextBox()
         pnlResultados = New Panel()
-        btnVerResult = New Button()
-        txtmen33 = New TextBox()
-        Label4 = New Label()
-        txtMay37 = New TextBox()
-        dgvResultados = New DataGridView()
-        colNumero = New DataGridViewTextBoxColumn()
-        colTemperatura = New DataGridViewTextBoxColumn()
+        txtMontoTotal = New TextBox()
+        txtCantidadTotal = New TextBox()
         Label2 = New Label()
+        txtMonto3 = New TextBox()
+        txtMonto2 = New TextBox()
+        txtMonto1 = New TextBox()
+        txtCantidad3 = New TextBox()
+        txtCantidad2 = New TextBox()
+        Label8 = New Label()
+        Label7 = New Label()
+        Label6 = New Label()
+        Label5 = New Label()
+        Label1 = New Label()
+        Label4 = New Label()
+        txtCantidad1 = New TextBox()
         lblLista = New Label()
-        gpbTotales.SuspendLayout()
         pnlTitulo.SuspendLayout()
         pnlRegistros.SuspendLayout()
         pnlResultados.SuspendLayout()
-        CType(dgvResultados, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' lblTitulo
@@ -65,356 +57,312 @@ Partial Class frmEnunciado1
         lblTitulo.AutoSize = True
         lblTitulo.FlatStyle = FlatStyle.System
         lblTitulo.Font = New Font("Myanmar Text", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        lblTitulo.Location = New Point(14, 10)
+        lblTitulo.Location = New Point(16, 13)
         lblTitulo.Name = "lblTitulo"
-        lblTitulo.Size = New Size(371, 34)
+        lblTitulo.Size = New Size(338, 43)
         lblTitulo.TabIndex = 0
-        lblTitulo.Text = "Enunciado 2 - Control de Temperaturas "
-        ' 
-        ' gpbTotales
-        ' 
-        gpbTotales.Controls.Add(txtListaMujeres)
-        gpbTotales.Controls.Add(txtListaHombres)
-        gpbTotales.Controls.Add(Label12)
-        gpbTotales.Controls.Add(Label14)
-        gpbTotales.Controls.Add(Label16)
-        gpbTotales.Location = New Point(24, 434)
-        gpbTotales.Margin = New Padding(3, 2, 3, 2)
-        gpbTotales.Name = "gpbTotales"
-        gpbTotales.Padding = New Padding(3, 2, 3, 2)
-        gpbTotales.Size = New Size(602, 75)
-        gpbTotales.TabIndex = 19
-        gpbTotales.TabStop = False
-        gpbTotales.Text = "Total Accidentados"
-        ' 
-        ' txtListaMujeres
-        ' 
-        txtListaMujeres.Location = New Point(303, 44)
-        txtListaMujeres.Margin = New Padding(3, 2, 3, 2)
-        txtListaMujeres.Name = "txtListaMujeres"
-        txtListaMujeres.ReadOnly = True
-        txtListaMujeres.Size = New Size(293, 23)
-        txtListaMujeres.TabIndex = 21
-        ' 
-        ' txtListaHombres
-        ' 
-        txtListaHombres.Location = New Point(302, 20)
-        txtListaHombres.Margin = New Padding(3, 2, 3, 2)
-        txtListaHombres.Name = "txtListaHombres"
-        txtListaHombres.ReadOnly = True
-        txtListaHombres.Size = New Size(294, 23)
-        txtListaHombres.TabIndex = 20
-        ' 
-        ' Label12
-        ' 
-        Label12.AutoSize = True
-        Label12.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label12.Location = New Point(226, 42)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(69, 29)
-        Label12.TabIndex = 14
-        Label12.Text = "Mujeres"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label14.Location = New Point(27, 34)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(162, 29)
-        Label14.TabIndex = 12
-        Label14.Text = "Lista de Accidentados"
-        ' 
-        ' Label16
-        ' 
-        Label16.AutoSize = True
-        Label16.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label16.Location = New Point(218, 20)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(77, 29)
-        Label16.TabIndex = 13
-        Label16.Text = "Hombres"
+        lblTitulo.Text = "Enunciado 1 - Tienda EGPH "
         ' 
         ' lblGenero
         ' 
         lblGenero.AutoSize = True
         lblGenero.FlatStyle = FlatStyle.System
-        lblGenero.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        lblGenero.Location = New Point(478, 71)
+        lblGenero.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        lblGenero.Location = New Point(546, 95)
         lblGenero.Name = "lblGenero"
-        lblGenero.Size = New Size(0, 29)
+        lblGenero.Size = New Size(0, 36)
         lblGenero.TabIndex = 21
         ' 
         ' pnlTitulo
         ' 
         pnlTitulo.Controls.Add(lblTitulo)
         pnlTitulo.Dock = DockStyle.Top
-        pnlTitulo.Location = New Point(20, 20)
+        pnlTitulo.Location = New Point(23, 27)
+        pnlTitulo.Margin = New Padding(3, 4, 3, 4)
         pnlTitulo.Name = "pnlTitulo"
-        pnlTitulo.Size = New Size(799, 47)
+        pnlTitulo.Size = New Size(1010, 63)
         pnlTitulo.TabIndex = 22
         ' 
         ' pnlRegistros
         ' 
-        pnlRegistros.Controls.Add(Label5)
-        pnlRegistros.Controls.Add(txtContador)
-        pnlRegistros.Controls.Add(Label1)
-        pnlRegistros.Controls.Add(btnRegister)
+        pnlRegistros.Controls.Add(btnIniciar)
         pnlRegistros.Controls.Add(Label3)
-        pnlRegistros.Controls.Add(lblIndicador)
-        pnlRegistros.Controls.Add(txtTemp)
-        pnlRegistros.Controls.Add(lblIndicacion)
+        pnlRegistros.Controls.Add(txtNumVentas)
         pnlRegistros.Dock = DockStyle.Top
-        pnlRegistros.Location = New Point(20, 67)
+        pnlRegistros.Location = New Point(23, 90)
+        pnlRegistros.Margin = New Padding(3, 4, 3, 4)
         pnlRegistros.Name = "pnlRegistros"
-        pnlRegistros.Size = New Size(799, 204)
+        pnlRegistros.Size = New Size(1010, 159)
         pnlRegistros.TabIndex = 26
         ' 
-        ' Label5
+        ' btnIniciar
         ' 
-        Label5.AutoSize = True
-        Label5.FlatStyle = FlatStyle.System
-        Label5.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label5.Location = New Point(646, 13)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(29, 29)
-        Label5.TabIndex = 34
-        Label5.Text = "°C"
-        ' 
-        ' txtContador
-        ' 
-        txtContador.Location = New Point(300, 139)
-        txtContador.MaxLength = 1
-        txtContador.Name = "txtContador"
-        txtContador.ReadOnly = True
-        txtContador.Size = New Size(199, 23)
-        txtContador.TabIndex = 33
-        txtContador.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.FlatStyle = FlatStyle.System
-        Label1.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(78, 137)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(215, 29)
-        Label1.TabIndex = 32
-        Label1.Text = "Personas que han entrado:"
-        ' 
-        ' btnRegister
-        ' 
-        btnRegister.BackColor = Color.Teal
-        btnRegister.Enabled = False
-        btnRegister.FlatAppearance.BorderSize = 0
-        btnRegister.FlatStyle = FlatStyle.Flat
-        btnRegister.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        btnRegister.ForeColor = Color.White
-        btnRegister.Location = New Point(355, 49)
-        btnRegister.Name = "btnRegister"
-        btnRegister.Size = New Size(101, 27)
-        btnRegister.TabIndex = 30
-        btnRegister.Text = "Registrar"
-        btnRegister.UseVisualStyleBackColor = False
+        btnIniciar.BackColor = Color.Teal
+        btnIniciar.FlatAppearance.BorderSize = 0
+        btnIniciar.FlatStyle = FlatStyle.Flat
+        btnIniciar.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        btnIniciar.ForeColor = Color.White
+        btnIniciar.Location = New Point(449, 86)
+        btnIniciar.Margin = New Padding(3, 4, 3, 4)
+        btnIniciar.Name = "btnIniciar"
+        btnIniciar.Size = New Size(115, 36)
+        btnIniciar.TabIndex = 30
+        btnIniciar.Text = "Iniciar"
+        btnIniciar.UseVisualStyleBackColor = False
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
         Label3.FlatStyle = FlatStyle.System
-        Label3.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label3.Location = New Point(89, 18)
+        Label3.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.Location = New Point(258, 22)
         Label3.Name = "Label3"
-        Label3.Size = New Size(193, 29)
+        Label3.Size = New Size(259, 36)
         Label3.TabIndex = 27
-        Label3.Text = "Ingrese la Temperatura:"
+        Label3.Text = "Ingrese las ventas del día:"
         ' 
-        ' lblIndicador
+        ' txtNumVentas
         ' 
-        lblIndicador.AutoSize = True
-        lblIndicador.BackColor = Color.Transparent
-        lblIndicador.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        lblIndicador.ForeColor = Color.Transparent
-        lblIndicador.Location = New Point(188, 79)
-        lblIndicador.Name = "lblIndicador"
-        lblIndicador.Padding = New Padding(3, 3, 3, 3)
-        lblIndicador.Size = New Size(6, 35)
-        lblIndicador.TabIndex = 29
-        lblIndicador.TextAlign = ContentAlignment.MiddleCenter
-        lblIndicador.Visible = False
-        ' 
-        ' txtTemp
-        ' 
-        txtTemp.Location = New Point(300, 20)
-        txtTemp.MaxLength = 5
-        txtTemp.Name = "txtTemp"
-        txtTemp.Size = New Size(199, 23)
-        txtTemp.TabIndex = 26
-        txtTemp.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' lblIndicacion
-        ' 
-        lblIndicacion.AutoSize = True
-        lblIndicacion.FlatStyle = FlatStyle.System
-        lblIndicacion.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        lblIndicacion.Location = New Point(89, 46)
-        lblIndicacion.Name = "lblIndicacion"
-        lblIndicacion.Size = New Size(246, 29)
-        lblIndicacion.TabIndex = 28
-        lblIndicacion.Text = "(ingrese 0 para finalizar registros)"
+        txtNumVentas.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point)
+        txtNumVentas.Location = New Point(523, 22)
+        txtNumVentas.Margin = New Padding(3, 4, 3, 4)
+        txtNumVentas.MaxLength = 5
+        txtNumVentas.Name = "txtNumVentas"
+        txtNumVentas.Size = New Size(102, 31)
+        txtNumVentas.TabIndex = 26
+        txtNumVentas.TextAlign = HorizontalAlignment.Center
         ' 
         ' pnlResultados
         ' 
-        pnlResultados.Controls.Add(btnVerResult)
-        pnlResultados.Controls.Add(txtmen33)
-        pnlResultados.Controls.Add(Label4)
-        pnlResultados.Controls.Add(txtMay37)
-        pnlResultados.Controls.Add(dgvResultados)
+        pnlResultados.Controls.Add(txtMontoTotal)
+        pnlResultados.Controls.Add(txtCantidadTotal)
         pnlResultados.Controls.Add(Label2)
+        pnlResultados.Controls.Add(txtMonto3)
+        pnlResultados.Controls.Add(txtMonto2)
+        pnlResultados.Controls.Add(txtMonto1)
+        pnlResultados.Controls.Add(txtCantidad3)
+        pnlResultados.Controls.Add(txtCantidad2)
+        pnlResultados.Controls.Add(Label8)
+        pnlResultados.Controls.Add(Label7)
+        pnlResultados.Controls.Add(Label6)
+        pnlResultados.Controls.Add(Label5)
+        pnlResultados.Controls.Add(Label1)
+        pnlResultados.Controls.Add(Label4)
+        pnlResultados.Controls.Add(txtCantidad1)
         pnlResultados.Controls.Add(lblLista)
         pnlResultados.Dock = DockStyle.Top
-        pnlResultados.Location = New Point(20, 271)
+        pnlResultados.Location = New Point(23, 249)
+        pnlResultados.Margin = New Padding(3, 4, 3, 4)
         pnlResultados.Name = "pnlResultados"
-        pnlResultados.Size = New Size(799, 349)
+        pnlResultados.Size = New Size(1010, 371)
         pnlResultados.TabIndex = 27
         ' 
-        ' btnVerResult
+        ' txtMontoTotal
         ' 
-        btnVerResult.BackColor = Color.Teal
-        btnVerResult.Dock = DockStyle.Bottom
-        btnVerResult.Enabled = False
-        btnVerResult.FlatAppearance.BorderSize = 0
-        btnVerResult.FlatStyle = FlatStyle.Flat
-        btnVerResult.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        btnVerResult.ForeColor = Color.White
-        btnVerResult.Location = New Point(0, 322)
-        btnVerResult.Name = "btnVerResult"
-        btnVerResult.Size = New Size(799, 27)
-        btnVerResult.TabIndex = 38
-        btnVerResult.Text = "Ver Resultados"
-        btnVerResult.UseVisualStyleBackColor = False
+        txtMontoTotal.Font = New Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        txtMontoTotal.Location = New Point(598, 299)
+        txtMontoTotal.Margin = New Padding(3, 4, 3, 4)
+        txtMontoTotal.MaxLength = 1
+        txtMontoTotal.Name = "txtMontoTotal"
+        txtMontoTotal.ReadOnly = True
+        txtMontoTotal.Size = New Size(113, 31)
+        txtMontoTotal.TabIndex = 51
+        txtMontoTotal.TextAlign = HorizontalAlignment.Center
         ' 
-        ' txtmen33
+        ' txtCantidadTotal
         ' 
-        txtmen33.Location = New Point(525, 290)
-        txtmen33.MaxLength = 1
-        txtmen33.Name = "txtmen33"
-        txtmen33.ReadOnly = True
-        txtmen33.Size = New Size(115, 23)
-        txtmen33.TabIndex = 37
-        txtmen33.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.FlatStyle = FlatStyle.System
-        Label4.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label4.Location = New Point(220, 288)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(311, 29)
-        Label4.TabIndex = 36
-        Label4.Text = "Personas con temperatura menor a 33°:"
-        ' 
-        ' txtMay37
-        ' 
-        txtMay37.Location = New Point(525, 243)
-        txtMay37.MaxLength = 1
-        txtMay37.Name = "txtMay37"
-        txtMay37.ReadOnly = True
-        txtMay37.Size = New Size(115, 23)
-        txtMay37.TabIndex = 35
-        txtMay37.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' dgvResultados
-        ' 
-        dgvResultados.BackgroundColor = SystemColors.Control
-        dgvResultados.CellBorderStyle = DataGridViewCellBorderStyle.Raised
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle1.BackColor = SystemColors.Control
-        DataGridViewCellStyle1.Font = New Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = Color.Teal
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
-        dgvResultados.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        dgvResultados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvResultados.Columns.AddRange(New DataGridViewColumn() {colNumero, colTemperatura})
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = SystemColors.Window
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        DataGridViewCellStyle2.ForeColor = Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = Color.Transparent
-        DataGridViewCellStyle2.SelectionForeColor = Color.Black
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
-        dgvResultados.DefaultCellStyle = DataGridViewCellStyle2
-        dgvResultados.Dock = DockStyle.Top
-        dgvResultados.GridColor = SystemColors.ActiveCaption
-        dgvResultados.Location = New Point(0, 29)
-        dgvResultados.Name = "dgvResultados"
-        dgvResultados.RowHeadersVisible = False
-        dgvResultados.RowHeadersWidth = 62
-        dgvResultados.RowTemplate.Height = 25
-        dgvResultados.Size = New Size(799, 201)
-        dgvResultados.TabIndex = 23
-        ' 
-        ' colNumero
-        ' 
-        colNumero.HeaderText = "Número de Ingreso"
-        colNumero.MinimumWidth = 8
-        colNumero.Name = "colNumero"
-        colNumero.Width = 441
-        ' 
-        ' colTemperatura
-        ' 
-        colTemperatura.HeaderText = "Temperatura"
-        colTemperatura.MinimumWidth = 8
-        colTemperatura.Name = "colTemperatura"
-        colTemperatura.Width = 440
+        txtCantidadTotal.Font = New Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        txtCantidadTotal.Location = New Point(446, 299)
+        txtCantidadTotal.Margin = New Padding(3, 4, 3, 4)
+        txtCantidadTotal.MaxLength = 1
+        txtCantidadTotal.Name = "txtCantidadTotal"
+        txtCantidadTotal.ReadOnly = True
+        txtCantidadTotal.Size = New Size(113, 31)
+        txtCantidadTotal.TabIndex = 50
+        txtCantidadTotal.TextAlign = HorizontalAlignment.Center
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.FlatStyle = FlatStyle.System
-        Label2.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(220, 241)
+        Label2.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.Location = New Point(365, 302)
         Label2.Name = "Label2"
-        Label2.Size = New Size(310, 29)
-        Label2.TabIndex = 34
-        Label2.Text = "Personas con temperatura mayor a 37°:"
+        Label2.Size = New Size(64, 36)
+        Label2.TabIndex = 49
+        Label2.Text = "Total"
+        Label2.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' txtMonto3
+        ' 
+        txtMonto3.Font = New Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        txtMonto3.Location = New Point(598, 237)
+        txtMonto3.Margin = New Padding(3, 4, 3, 4)
+        txtMonto3.MaxLength = 1
+        txtMonto3.Name = "txtMonto3"
+        txtMonto3.ReadOnly = True
+        txtMonto3.Size = New Size(113, 31)
+        txtMonto3.TabIndex = 48
+        txtMonto3.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtMonto2
+        ' 
+        txtMonto2.Font = New Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        txtMonto2.Location = New Point(598, 180)
+        txtMonto2.Margin = New Padding(3, 4, 3, 4)
+        txtMonto2.MaxLength = 1
+        txtMonto2.Name = "txtMonto2"
+        txtMonto2.ReadOnly = True
+        txtMonto2.Size = New Size(113, 31)
+        txtMonto2.TabIndex = 47
+        txtMonto2.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtMonto1
+        ' 
+        txtMonto1.Font = New Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        txtMonto1.Location = New Point(598, 122)
+        txtMonto1.Margin = New Padding(3, 4, 3, 4)
+        txtMonto1.MaxLength = 1
+        txtMonto1.Name = "txtMonto1"
+        txtMonto1.ReadOnly = True
+        txtMonto1.Size = New Size(113, 31)
+        txtMonto1.TabIndex = 46
+        txtMonto1.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtCantidad3
+        ' 
+        txtCantidad3.Font = New Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        txtCantidad3.Location = New Point(446, 237)
+        txtCantidad3.Margin = New Padding(3, 4, 3, 4)
+        txtCantidad3.MaxLength = 1
+        txtCantidad3.Name = "txtCantidad3"
+        txtCantidad3.ReadOnly = True
+        txtCantidad3.Size = New Size(113, 31)
+        txtCantidad3.TabIndex = 45
+        txtCantidad3.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtCantidad2
+        ' 
+        txtCantidad2.Font = New Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        txtCantidad2.Location = New Point(446, 180)
+        txtCantidad2.Margin = New Padding(3, 4, 3, 4)
+        txtCantidad2.MaxLength = 1
+        txtCantidad2.Name = "txtCantidad2"
+        txtCantidad2.ReadOnly = True
+        txtCantidad2.Size = New Size(113, 31)
+        txtCantidad2.TabIndex = 44
+        txtCantidad2.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.FlatStyle = FlatStyle.System
+        Label8.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label8.Location = New Point(614, 82)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(78, 36)
+        Label8.TabIndex = 43
+        Label8.Text = "Monto"
+        Label8.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.FlatStyle = FlatStyle.System
+        Label7.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label7.Location = New Point(455, 82)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(99, 36)
+        Label7.TabIndex = 42
+        Label7.Text = "Cantidad"
+        Label7.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.FlatStyle = FlatStyle.System
+        Label6.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label6.Location = New Point(262, 242)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(167, 36)
+        Label6.TabIndex = 41
+        Label6.Text = "menores a $500"
+        Label6.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.FlatStyle = FlatStyle.System
+        Label5.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label5.Location = New Point(227, 181)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(202, 36)
+        Label5.TabIndex = 40
+        Label5.Text = "entre $500 y $1000"
+        Label5.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.FlatStyle = FlatStyle.System
+        Label1.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(251, 122)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(178, 36)
+        Label1.TabIndex = 39
+        Label1.Text = "mayores a $1000"
+        Label1.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.FlatStyle = FlatStyle.System
+        Label4.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label4.Location = New Point(251, 384)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(0, 36)
+        Label4.TabIndex = 36
+        ' 
+        ' txtCantidad1
+        ' 
+        txtCantidad1.Font = New Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point)
+        txtCantidad1.Location = New Point(446, 122)
+        txtCantidad1.Margin = New Padding(3, 4, 3, 4)
+        txtCantidad1.MaxLength = 1
+        txtCantidad1.Name = "txtCantidad1"
+        txtCantidad1.ReadOnly = True
+        txtCantidad1.Size = New Size(113, 31)
+        txtCantidad1.TabIndex = 35
+        txtCantidad1.TextAlign = HorizontalAlignment.Center
         ' 
         ' lblLista
         ' 
         lblLista.AutoSize = True
-        lblLista.Dock = DockStyle.Top
-        lblLista.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        lblLista.Location = New Point(0, 0)
+        lblLista.Font = New Font("Myanmar Text", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        lblLista.Location = New Point(449, 13)
         lblLista.Name = "lblLista"
-        lblLista.Size = New Size(334, 29)
+        lblLista.Size = New Size(118, 36)
         lblLista.TabIndex = 22
-        lblLista.Text = "Lista de Personas y Temperaturas Medidas"
+        lblLista.Text = "Resultados"
         ' 
         ' frmEnunciado1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(839, 651)
+        ClientSize = New Size(1056, 659)
         Controls.Add(pnlResultados)
         Controls.Add(pnlRegistros)
         Controls.Add(pnlTitulo)
         Controls.Add(lblGenero)
-        Controls.Add(gpbTotales)
-        Margin = New Padding(3, 2, 3, 2)
         Name = "frmEnunciado1"
-        Padding = New Padding(20, 20, 20, 20)
+        Padding = New Padding(23, 27, 23, 27)
         Text = "Enunciado 1"
-        gpbTotales.ResumeLayout(False)
-        gpbTotales.PerformLayout()
         pnlTitulo.ResumeLayout(False)
         pnlTitulo.PerformLayout()
         pnlRegistros.ResumeLayout(False)
         pnlRegistros.PerformLayout()
         pnlResultados.ResumeLayout(False)
         pnlResultados.PerformLayout()
-        CType(dgvResultados, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -430,21 +378,26 @@ Partial Class frmEnunciado1
     Friend WithEvents pnlTitulo As Panel
     Friend WithEvents pnlRegistros As Panel
     Friend WithEvents btnRegister As Button
+    Friend WithEvents btnIniciar As Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents lblIndicador As Label
+    Private txtNumVentas As TextBox
     Friend WithEvents txtTemp As TextBox
-    Friend WithEvents lblIndicacion As Label
     Friend WithEvents pnlResultados As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents txtContador As TextBox
     Friend WithEvents lblLista As Label
-    Friend WithEvents dgvResultados As DataGridView
-    Friend WithEvents colNumero As DataGridViewTextBoxColumn
-    Friend WithEvents colTemperatura As DataGridViewTextBoxColumn
     Friend WithEvents txtmen33 As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtMay37 As TextBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents txtCantidad1 As TextBox
+    Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents btnVerResult As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents txtMonto3 As TextBox
+    Friend WithEvents txtMonto2 As TextBox
+    Friend WithEvents txtMonto1 As TextBox
+    Friend WithEvents txtCantidad3 As TextBox
+    Friend WithEvents txtCantidad2 As TextBox
+    Friend WithEvents txtMontoTotal As TextBox
+    Friend WithEvents txtCantidadTotal As TextBox
+    Friend WithEvents Label2 As Label
 End Class
