@@ -22,8 +22,8 @@
                 formulario = New frmEnunciado2()
                 'Case "smiEnun3"
                 '    formulario = New frmEnunciado3()
-                'Case "smiEnun4"
-                '    formulario = New frmEnunciado4()
+            Case "smiEnun4"
+                formulario = New frmEnunciado4()
                 'Case "smiEnun5"
                 '    formulario = New frmEnunciado5()
                 'Case "smiEnun6"
