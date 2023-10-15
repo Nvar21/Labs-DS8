@@ -61,3 +61,4 @@ C:\Users\50763\source\repos\Labs-DS8\lab 2 Grupo 5\obj\Debug\net6.0-windows\refi
 C:\Users\50763\source\repos\Labs-DS8\lab 2 Grupo 5\obj\Debug\net6.0-windows\lab 2 Grupo 5.pdb
 C:\Users\50763\source\repos\Labs-DS8\lab 2 Grupo 5\obj\Debug\net6.0-windows\lab 2 Grupo 5.genruntimeconfig.cache
 C:\Users\50763\source\repos\Labs-DS8\lab 2 Grupo 5\obj\Debug\net6.0-windows\ref\lab 2 Grupo 5.dll
+C:\Users\gutie\Source\Repos\Nvar21\Labs-DS8\lab 2 Grupo 5\obj\Debug\net6.0-windows\lab_2_Grupo_5.frmEnunciado6.resources

@@ -27,14 +27,13 @@ Partial Class frmEnunciado4
         txtYear = New TextBox()
         btnCalcular = New Button()
         Label3 = New Label()
-        txtResult = New TextBox()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(396, 110)
+        Label1.Location = New Point(145, 163)
         Label1.Name = "Label1"
         Label1.Size = New Size(487, 32)
         Label1.TabIndex = 0
@@ -44,7 +43,7 @@ Partial Class frmEnunciado4
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(469, 200)
+        Label2.Location = New Point(218, 253)
         Label2.Name = "Label2"
         Label2.Size = New Size(166, 32)
         Label2.TabIndex = 1
@@ -53,7 +52,7 @@ Partial Class frmEnunciado4
         ' txtYear
         ' 
         txtYear.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
-        txtYear.Location = New Point(659, 192)
+        txtYear.Location = New Point(408, 245)
         txtYear.Name = "txtYear"
         txtYear.Size = New Size(150, 45)
         txtYear.TabIndex = 2
@@ -61,7 +60,7 @@ Partial Class frmEnunciado4
         ' btnCalcular
         ' 
         btnCalcular.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        btnCalcular.Location = New Point(580, 272)
+        btnCalcular.Location = New Point(329, 325)
         btnCalcular.Name = "btnCalcular"
         btnCalcular.Size = New Size(140, 43)
         btnCalcular.TabIndex = 3
@@ -76,21 +75,11 @@ Partial Class frmEnunciado4
         Label3.Size = New Size(0, 25)
         Label3.TabIndex = 4
         ' 
-        ' txtResult
-        ' 
-        txtResult.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
-        txtResult.Location = New Point(416, 375)
-        txtResult.Multiline = True
-        txtResult.Name = "txtResult"
-        txtResult.Size = New Size(467, 93)
-        txtResult.TabIndex = 5
-        ' 
         ' frmEnunciado4
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1320, 1050)
-        Controls.Add(txtResult)
         Controls.Add(Label3)
         Controls.Add(btnCalcular)
         Controls.Add(txtYear)
@@ -107,5 +96,4 @@ Partial Class frmEnunciado4
     Friend WithEvents txtYear As TextBox
     Friend WithEvents btnCalcular As Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtResult As TextBox
 End Class

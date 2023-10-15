@@ -8,7 +8,7 @@
         If Integer.TryParse(txtYear.Text, year) AndAlso year >= 1900 And year <= 2100 Then
             ' El resultado se almacena en "fechaPascua"
             Dim fechaPascua As DateTime = CalcularDomingo(year)
-            txtResult.Text = "El domingo de Pascua en el año " & year & " es el " & fechaPascua.ToString("d 'de' MMMM", New System.Globalization.CultureInfo("es-ES"))
+            MsgBox("El domingo de Pascua en el año " & year & " es el " & fechaPascua.ToString("d 'de' MMMM", New System.Globalization.CultureInfo("es-ES")), MsgBoxStyle.Information, "MENSAJE")
         Else
             MsgBox("Por favor, ingrese un año válido.", MsgBoxStyle.Information, "ERROR")
         End If
