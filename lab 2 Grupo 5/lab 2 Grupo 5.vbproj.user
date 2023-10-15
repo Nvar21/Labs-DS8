@@ -16,6 +16,9 @@
     <Compile Update="frmEnunciado4.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmEnunciado5.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmEnunciado6.vb">
       <SubType>Form</SubType>
     </Compile>
