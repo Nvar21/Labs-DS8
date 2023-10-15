@@ -26,16 +26,17 @@ Partial Class frmEnunciado4
         Label2 = New Label()
         txtYear = New TextBox()
         btnCalcular = New Button()
+        Label3 = New Label()
+        txtResult = New TextBox()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(277, 66)
-        Label1.Margin = New Padding(2, 0, 2, 0)
+        Label1.Location = New Point(396, 110)
         Label1.Name = "Label1"
-        Label1.Size = New Size(324, 21)
+        Label1.Size = New Size(487, 32)
         Label1.TabIndex = 0
         Label1.Text = "Enunciado 4 - Calcular la fecha de pascua"
         ' 
@@ -43,43 +44,58 @@ Partial Class frmEnunciado4
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(328, 120)
-        Label2.Margin = New Padding(2, 0, 2, 0)
+        Label2.Location = New Point(469, 200)
         Label2.Name = "Label2"
-        Label2.Size = New Size(109, 21)
+        Label2.Size = New Size(166, 32)
         Label2.TabIndex = 1
         Label2.Text = "Ingresar año:"
         ' 
         ' txtYear
         ' 
         txtYear.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
-        txtYear.Location = New Point(461, 115)
-        txtYear.Margin = New Padding(2, 2, 2, 2)
+        txtYear.Location = New Point(659, 192)
         txtYear.Name = "txtYear"
-        txtYear.Size = New Size(106, 32)
+        txtYear.Size = New Size(150, 45)
         txtYear.TabIndex = 2
         ' 
         ' btnCalcular
         ' 
         btnCalcular.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        btnCalcular.Location = New Point(405, 168)
-        btnCalcular.Margin = New Padding(2, 2, 2, 2)
+        btnCalcular.Location = New Point(580, 272)
         btnCalcular.Name = "btnCalcular"
-        btnCalcular.Size = New Size(98, 26)
+        btnCalcular.Size = New Size(140, 43)
         btnCalcular.TabIndex = 3
         btnCalcular.Text = "Calcular"
         btnCalcular.UseVisualStyleBackColor = True
         ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(611, 375)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(0, 25)
+        Label3.TabIndex = 4
+        ' 
+        ' txtResult
+        ' 
+        txtResult.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
+        txtResult.Location = New Point(416, 375)
+        txtResult.Multiline = True
+        txtResult.Name = "txtResult"
+        txtResult.Size = New Size(467, 93)
+        txtResult.TabIndex = 5
+        ' 
         ' frmEnunciado4
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(924, 631)
+        ClientSize = New Size(1320, 1050)
+        Controls.Add(txtResult)
+        Controls.Add(Label3)
         Controls.Add(btnCalcular)
         Controls.Add(txtYear)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Margin = New Padding(2, 2, 2, 2)
         Name = "frmEnunciado4"
         Text = "frmEnunciado4"
         ResumeLayout(False)
@@ -90,4 +106,6 @@ Partial Class frmEnunciado4
     Friend WithEvents Label2 As Label
     Friend WithEvents txtYear As TextBox
     Friend WithEvents btnCalcular As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtResult As TextBox
 End Class
