@@ -24,13 +24,13 @@ Public Class frmEnunciado2
             If IsNumeric(txtTemp.Text) Then 'Si el valor del txt es una temperatura válida (int o double)
                 Dim temperatura As Double = txtTemp.Text
                 lblIndicador.Show()
-                lblIndicador.Text = "Valor CORRECTO para temperatura"
+                lblIndicador.Text = "Valor VÁLIDO para temperatura"
                 lblIndicador.Location = New Point((pnlRegistros.Width - lblIndicador.Width) \ 2, 75)
                 lblIndicador.ForeColor = Color.FromArgb(153, 204, 51) 'Verde de Correcto
                 btnRegister.Enabled = True
             Else ' Si es un valor alfabetico o caracter (aB"*$...)
                 lblIndicador.Show()
-                lblIndicador.Text = "Valor INCORRECTO para temperatura, no ingrese letras o caracteres"
+                lblIndicador.Text = "Valor INVÁLIDO para temperatura, no ingrese letras o caracteres"
                 lblIndicador.Location = New Point((pnlRegistros.Width - lblIndicador.Width) \ 2, 75)
                 lblIndicador.ForeColor = Color.FromArgb(255, 153, 102) 'Rojo de Incorrecto
                 btnRegister.Enabled = False

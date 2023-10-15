@@ -4,7 +4,7 @@
         Me.Width = 1080
         Me.Height = 750
         Me.StartPosition = FormStartPosition.Manual
-        Me.Location = New Point(200, 150) ' Cambia las coordenadas X e Y según tus necesidades.
+        Me.Location = New Point(0, 0) ' Cambia las coordenadas X e Y según tus necesidades.
         IsMdiContainer = True
 
     End Sub
@@ -20,10 +20,17 @@
                 formulario = New frmEnunciado1()
             Case "smiEnun2"
                 formulario = New frmEnunciado2()
+<<<<<<< HEAD
                 'Case "smiEnun3"
                 '    formulario = New frmEnunciado3()
             Case "smiEnun4"
                 formulario = New frmEnunciado4()
+=======
+            Case "smiEnun3"
+                formulario = New frmEnunciado3()
+                'Case "smiEnun4"
+                '    formulario = New frmEnunciado4()
+>>>>>>> a45ee3b662dbc9e37e1b108a90bcfaef3bbe19fb
                 'Case "smiEnun5"
                 '    formulario = New frmEnunciado5()
                 'Case "smiEnun6"

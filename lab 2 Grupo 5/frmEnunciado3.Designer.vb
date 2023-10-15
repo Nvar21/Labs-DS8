@@ -23,43 +23,21 @@ Partial Class frmEnunciado3
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        lblTitulo = New Label()
-        gpbTotales = New GroupBox()
-        txtListaMujeres = New TextBox()
-        txtListaHombres = New TextBox()
-        Label12 = New Label()
-        Label14 = New Label()
-        Label16 = New Label()
         lblGenero = New Label()
+        lblTitulo = New Label()
         pnlTitulo = New Panel()
-        pnlRegistros = New Panel()
-        Label5 = New Label()
-        txtContador = New TextBox()
-        Label1 = New Label()
-        btnRegister = New Button()
-        Label3 = New Label()
+        txtNumero = New TextBox()
         lblIndicador = New Label()
-        txtTemp = New TextBox()
-        lblIndicacion = New Label()
-        pnlResultados = New Panel()
-        btnVerResult = New Button()
-        txtmen33 = New TextBox()
-        Label4 = New Label()
-        txtMay37 = New TextBox()
-        dgvResultados = New DataGridView()
-        colNumero = New DataGridViewTextBoxColumn()
-        colTemperatura = New DataGridViewTextBoxColumn()
-        Label2 = New Label()
-        lblLista = New Label()
-        gpbTotales.SuspendLayout()
+        Label3 = New Label()
+        Label1 = New Label()
+        txtResultado = New TextBox()
+        pnlRegistros = New Panel()
+        lblPrueba = New Label()
         pnlTitulo.SuspendLayout()
         pnlRegistros.SuspendLayout()
-        pnlResultados.SuspendLayout()
-        CType(dgvResultados, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
+<<<<<<< HEAD
         ' lblTitulo
         ' 
         lblTitulo.AutoSize = True
@@ -139,6 +117,8 @@ Partial Class frmEnunciado3
         Label16.TabIndex = 13
         Label16.Text = "Hombres"
         ' 
+=======
+>>>>>>> a45ee3b662dbc9e37e1b108a90bcfaef3bbe19fb
         ' lblGenero
         ' 
         lblGenero.AutoSize = True
@@ -150,6 +130,17 @@ Partial Class frmEnunciado3
         lblGenero.Size = New Size(0, 43)
         lblGenero.TabIndex = 21
         ' 
+        ' lblTitulo
+        ' 
+        lblTitulo.AutoSize = True
+        lblTitulo.FlatStyle = FlatStyle.System
+        lblTitulo.Font = New Font("Myanmar Text", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        lblTitulo.Location = New Point(14, 10)
+        lblTitulo.Name = "lblTitulo"
+        lblTitulo.Size = New Size(352, 34)
+        lblTitulo.TabIndex = 0
+        lblTitulo.Text = "Enunciado 3 - Invertir Número Entero"
+        ' 
         ' pnlTitulo
         ' 
         pnlTitulo.Controls.Add(lblTitulo)
@@ -160,8 +151,9 @@ Partial Class frmEnunciado3
         pnlTitulo.Size = New Size(1262, 78)
         pnlTitulo.TabIndex = 22
         ' 
-        ' pnlRegistros
+        ' txtNumero
         ' 
+<<<<<<< HEAD
         pnlRegistros.Controls.Add(Label5)
         pnlRegistros.Controls.Add(txtContador)
         pnlRegistros.Controls.Add(Label1)
@@ -239,6 +231,14 @@ Partial Class frmEnunciado3
         Label3.Size = New Size(292, 43)
         Label3.TabIndex = 27
         Label3.Text = "Ingrese la Temperatura:"
+=======
+        txtNumero.Location = New Point(284, 18)
+        txtNumero.MaxLength = 1000
+        txtNumero.Name = "txtNumero"
+        txtNumero.Size = New Size(199, 23)
+        txtNumero.TabIndex = 26
+        txtNumero.TextAlign = HorizontalAlignment.Center
+>>>>>>> a45ee3b662dbc9e37e1b108a90bcfaef3bbe19fb
         ' 
         ' lblIndicador
         ' 
@@ -246,8 +246,12 @@ Partial Class frmEnunciado3
         lblIndicador.BackColor = Color.Transparent
         lblIndicador.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
         lblIndicador.ForeColor = Color.Transparent
+<<<<<<< HEAD
         lblIndicador.Location = New Point(471, 123)
         lblIndicador.Margin = New Padding(4, 0, 4, 0)
+=======
+        lblIndicador.Location = New Point(173, 77)
+>>>>>>> a45ee3b662dbc9e37e1b108a90bcfaef3bbe19fb
         lblIndicador.Name = "lblIndicador"
         lblIndicador.Padding = New Padding(4, 5, 4, 5)
         lblIndicador.Size = New Size(8, 53)
@@ -255,8 +259,9 @@ Partial Class frmEnunciado3
         lblIndicador.TextAlign = ContentAlignment.MiddleCenter
         lblIndicador.Visible = False
         ' 
-        ' txtTemp
+        ' Label3
         ' 
+<<<<<<< HEAD
         txtTemp.Location = New Point(630, 25)
         txtTemp.Margin = New Padding(4, 5, 4, 5)
         txtTemp.MaxLength = 5
@@ -264,9 +269,20 @@ Partial Class frmEnunciado3
         txtTemp.Size = New Size(283, 31)
         txtTemp.TabIndex = 26
         txtTemp.TextAlign = HorizontalAlignment.Center
+=======
+        Label3.AutoSize = True
+        Label3.FlatStyle = FlatStyle.System
+        Label3.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.Location = New Point(73, 16)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(155, 29)
+        Label3.TabIndex = 27
+        Label3.Text = "Ingrese el número:"
+>>>>>>> a45ee3b662dbc9e37e1b108a90bcfaef3bbe19fb
         ' 
-        ' lblIndicacion
+        ' Label1
         ' 
+<<<<<<< HEAD
         lblIndicacion.AutoSize = True
         lblIndicacion.FlatStyle = FlatStyle.System
         lblIndicacion.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
@@ -276,9 +292,20 @@ Partial Class frmEnunciado3
         lblIndicacion.Size = New Size(372, 43)
         lblIndicacion.TabIndex = 28
         lblIndicacion.Text = "(ingrese 0 para finalizar registros)"
+=======
+        Label1.AutoSize = True
+        Label1.FlatStyle = FlatStyle.System
+        Label1.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(63, 87)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(169, 29)
+        Label1.TabIndex = 32
+        Label1.Text = "Número Convertido:"
+>>>>>>> a45ee3b662dbc9e37e1b108a90bcfaef3bbe19fb
         ' 
-        ' pnlResultados
+        ' txtResultado
         ' 
+<<<<<<< HEAD
         pnlResultados.Controls.Add(btnVerResult)
         pnlResultados.Controls.Add(txtmen33)
         pnlResultados.Controls.Add(Label4)
@@ -292,9 +319,19 @@ Partial Class frmEnunciado3
         pnlResultados.Name = "pnlResultados"
         pnlResultados.Size = New Size(1262, 582)
         pnlResultados.TabIndex = 27
+=======
+        txtResultado.Location = New Point(284, 89)
+        txtResultado.MaxLength = 1
+        txtResultado.Name = "txtResultado"
+        txtResultado.ReadOnly = True
+        txtResultado.Size = New Size(199, 23)
+        txtResultado.TabIndex = 33
+        txtResultado.TextAlign = HorizontalAlignment.Center
+>>>>>>> a45ee3b662dbc9e37e1b108a90bcfaef3bbe19fb
         ' 
-        ' btnVerResult
+        ' pnlRegistros
         ' 
+<<<<<<< HEAD
         btnVerResult.BackColor = Color.Teal
         btnVerResult.Dock = DockStyle.Bottom
         btnVerResult.Enabled = False
@@ -309,9 +346,23 @@ Partial Class frmEnunciado3
         btnVerResult.TabIndex = 38
         btnVerResult.Text = "Ver Resultados"
         btnVerResult.UseVisualStyleBackColor = False
+=======
+        pnlRegistros.Controls.Add(txtResultado)
+        pnlRegistros.Controls.Add(Label1)
+        pnlRegistros.Controls.Add(Label3)
+        pnlRegistros.Controls.Add(lblIndicador)
+        pnlRegistros.Controls.Add(txtNumero)
+        pnlRegistros.Controls.Add(lblPrueba)
+        pnlRegistros.Dock = DockStyle.Top
+        pnlRegistros.Location = New Point(20, 67)
+        pnlRegistros.Name = "pnlRegistros"
+        pnlRegistros.Size = New Size(884, 137)
+        pnlRegistros.TabIndex = 26
+>>>>>>> a45ee3b662dbc9e37e1b108a90bcfaef3bbe19fb
         ' 
-        ' txtmen33
+        ' lblPrueba
         ' 
+<<<<<<< HEAD
         txtmen33.Location = New Point(750, 483)
         txtmen33.Margin = New Padding(4, 5, 4, 5)
         txtmen33.MaxLength = 1
@@ -414,11 +465,21 @@ Partial Class frmEnunciado3
         lblLista.Size = New Size(505, 43)
         lblLista.TabIndex = 22
         lblLista.Text = "Lista de Personas y Temperaturas Medidas"
+=======
+        lblPrueba.AutoSize = True
+        lblPrueba.FlatStyle = FlatStyle.System
+        lblPrueba.Font = New Font("Myanmar Text", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblPrueba.Location = New Point(500, 16)
+        lblPrueba.Name = "lblPrueba"
+        lblPrueba.Size = New Size(0, 29)
+        lblPrueba.TabIndex = 28
+>>>>>>> a45ee3b662dbc9e37e1b108a90bcfaef3bbe19fb
         ' 
         ' frmEnunciado3
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
+<<<<<<< HEAD
         ClientSize = New Size(1320, 1050)
         Controls.Add(pnlResultados)
         Controls.Add(pnlRegistros)
@@ -426,23 +487,23 @@ Partial Class frmEnunciado3
         Controls.Add(lblGenero)
         Controls.Add(gpbTotales)
         Margin = New Padding(4, 3, 4, 3)
+=======
+        ClientSize = New Size(924, 631)
+        Controls.Add(pnlRegistros)
+        Controls.Add(pnlTitulo)
+        Controls.Add(lblGenero)
+        Margin = New Padding(3, 2, 3, 2)
+>>>>>>> a45ee3b662dbc9e37e1b108a90bcfaef3bbe19fb
         Name = "frmEnunciado3"
         Padding = New Padding(29, 33, 29, 33)
         Text = "Enunciado 3"
-        gpbTotales.ResumeLayout(False)
-        gpbTotales.PerformLayout()
         pnlTitulo.ResumeLayout(False)
         pnlTitulo.PerformLayout()
         pnlRegistros.ResumeLayout(False)
         pnlRegistros.PerformLayout()
-        pnlResultados.ResumeLayout(False)
-        pnlResultados.PerformLayout()
-        CType(dgvResultados, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents lblTitulo As Label
     Friend WithEvents gpbTotales As GroupBox
     Friend WithEvents txtListaMujeres As TextBox
     Friend WithEvents txtListaHombres As TextBox
@@ -450,16 +511,9 @@ Partial Class frmEnunciado3
     Friend WithEvents Label14 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents lblGenero As Label
-    Friend WithEvents pnlTitulo As Panel
-    Friend WithEvents pnlRegistros As Panel
     Friend WithEvents btnRegister As Button
-    Friend WithEvents Label3 As Label
-    Friend WithEvents lblIndicador As Label
     Friend WithEvents txtTemp As TextBox
-    Friend WithEvents lblIndicacion As Label
     Friend WithEvents pnlResultados As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents txtContador As TextBox
     Friend WithEvents lblLista As Label
     Friend WithEvents dgvResultados As DataGridView
     Friend WithEvents colNumero As DataGridViewTextBoxColumn
@@ -468,6 +522,14 @@ Partial Class frmEnunciado3
     Friend WithEvents Label4 As Label
     Friend WithEvents txtMay37 As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents btnVerResult As Button
+    Friend WithEvents lblTitulo As Label
+    Friend WithEvents pnlTitulo As Panel
+    Private WithEvents txtNumero As TextBox
+    Friend WithEvents lblIndicador As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtResultado As TextBox
+    Friend WithEvents pnlRegistros As Panel
+    Friend WithEvents lblPrueba As Label
 End Class
