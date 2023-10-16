@@ -47,9 +47,9 @@ Partial Class Form1
         Panel2.Controls.Add(lblNombreForm)
         Panel2.Dock = DockStyle.Top
         Panel2.Location = New Point(0, 0)
-        Panel2.Margin = New Padding(3, 4, 3, 4)
+        Panel2.Margin = New Padding(4, 5, 4, 5)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(1205, 103)
+        Panel2.Size = New Size(1506, 129)
         Panel2.TabIndex = 2
         ' 
         ' btnSalir
@@ -59,10 +59,10 @@ Partial Class Form1
         btnSalir.Dock = DockStyle.Right
         btnSalir.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point)
         btnSalir.ForeColor = Color.White
-        btnSalir.Location = New Point(1169, 0)
+        btnSalir.Location = New Point(1465, 0)
         btnSalir.Margin = New Padding(0)
         btnSalir.Name = "btnSalir"
-        btnSalir.Size = New Size(36, 36)
+        btnSalir.Size = New Size(41, 40)
         btnSalir.TabIndex = 3
         btnSalir.Text = "X"
         btnSalir.TextAlign = ContentAlignment.TopCenter
@@ -73,9 +73,10 @@ Partial Class Form1
         lblNombreForm.AutoSize = True
         lblNombreForm.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
         lblNombreForm.ForeColor = Color.White
-        lblNombreForm.Location = New Point(85, 36)
+        lblNombreForm.Location = New Point(106, 45)
+        lblNombreForm.Margin = New Padding(4, 0, 4, 0)
         lblNombreForm.Name = "lblNombreForm"
-        lblNombreForm.Size = New Size(282, 31)
+        lblNombreForm.Size = New Size(332, 37)
         lblNombreForm.TabIndex = 0
         lblNombreForm.Text = "Inicio - Laboratorio 2"
         ' 
@@ -88,11 +89,11 @@ Partial Class Form1
         MenuStrip1.GripMargin = New Padding(2)
         MenuStrip1.ImageScalingSize = New Size(24, 24)
         MenuStrip1.Items.AddRange(New ToolStripItem() {smiEnun1, smiEnun2, smiEnun3, smiEnun4, smiEnun5, smiEnun6})
-        MenuStrip1.Location = New Point(0, 103)
-        MenuStrip1.Margin = New Padding(0, 27, 0, 27)
+        MenuStrip1.Location = New Point(0, 129)
+        MenuStrip1.Margin = New Padding(0, 34, 0, 34)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Padding = New Padding(7, 3, 0, 3)
-        MenuStrip1.Size = New Size(203, 697)
+        MenuStrip1.Padding = New Padding(9, 4, 0, 4)
+        MenuStrip1.Size = New Size(230, 871)
         MenuStrip1.TabIndex = 3
         MenuStrip1.Text = "Menu"
         ' 
@@ -102,7 +103,7 @@ Partial Class Form1
         smiEnun1.Margin = New Padding(0, 75, 0, 5)
         smiEnun1.Name = "smiEnun1"
         smiEnun1.Padding = New Padding(4, 20, 0, 0)
-        smiEnun1.Size = New Size(188, 49)
+        smiEnun1.Size = New Size(211, 53)
         smiEnun1.Text = "Enunciado 1"
         ' 
         ' smiEnun2
@@ -111,7 +112,7 @@ Partial Class Form1
         smiEnun2.Margin = New Padding(0, 5, 0, 7)
         smiEnun2.Name = "smiEnun2"
         smiEnun2.Padding = New Padding(10, 20, 50, 0)
-        smiEnun2.Size = New Size(188, 49)
+        smiEnun2.Size = New Size(211, 53)
         smiEnun2.Text = "Enunciado 2"
         ' 
         ' smiEnun3
@@ -120,7 +121,7 @@ Partial Class Form1
         smiEnun3.Margin = New Padding(0, 5, 0, 7)
         smiEnun3.Name = "smiEnun3"
         smiEnun3.Padding = New Padding(10, 20, 50, 0)
-        smiEnun3.Size = New Size(188, 49)
+        smiEnun3.Size = New Size(211, 53)
         smiEnun3.Text = "Enunciado 3"
         ' 
         ' smiEnun4
@@ -129,7 +130,7 @@ Partial Class Form1
         smiEnun4.Margin = New Padding(0, 5, 0, 7)
         smiEnun4.Name = "smiEnun4"
         smiEnun4.Padding = New Padding(10, 20, 50, 0)
-        smiEnun4.Size = New Size(188, 49)
+        smiEnun4.Size = New Size(211, 53)
         smiEnun4.Text = "Enunciado 4"
         ' 
         ' smiEnun5
@@ -138,7 +139,7 @@ Partial Class Form1
         smiEnun5.Margin = New Padding(0, 5, 0, 7)
         smiEnun5.Name = "smiEnun5"
         smiEnun5.Padding = New Padding(10, 20, 50, 0)
-        smiEnun5.Size = New Size(188, 49)
+        smiEnun5.Size = New Size(211, 53)
         smiEnun5.Text = "Enunciado 5"
         ' 
         ' smiEnun6
@@ -147,41 +148,41 @@ Partial Class Form1
         smiEnun6.Margin = New Padding(0, 5, 0, 7)
         smiEnun6.Name = "smiEnun6"
         smiEnun6.Padding = New Padding(10, 20, 50, 0)
-        smiEnun6.Size = New Size(188, 49)
+        smiEnun6.Size = New Size(211, 53)
         smiEnun6.Text = "Enunciado 6"
         ' 
         ' Panel1
         ' 
         Panel1.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         Panel1.BackColor = Color.FromArgb(CByte(23), CByte(107), CByte(135))
-        Panel1.Location = New Point(0, 723)
-        Panel1.Margin = New Padding(3, 4, 3, 4)
+        Panel1.Location = New Point(0, 904)
+        Panel1.Margin = New Padding(4, 5, 4, 5)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(177, 77)
+        Panel1.Size = New Size(221, 96)
         Panel1.TabIndex = 5
         ' 
         ' Panel3
         ' 
         Panel3.BackColor = Color.FromArgb(CByte(23), CByte(107), CByte(135))
-        Panel3.Location = New Point(0, 103)
-        Panel3.Margin = New Padding(3, 4, 3, 4)
+        Panel3.Location = New Point(0, 129)
+        Panel3.Margin = New Padding(4, 5, 4, 5)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(177, 48)
+        Panel3.Size = New Size(221, 60)
         Panel3.TabIndex = 6
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(218), CByte(255), CByte(251))
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1205, 800)
+        ClientSize = New Size(1506, 1000)
         Controls.Add(Panel1)
         Controls.Add(Panel3)
         Controls.Add(MenuStrip1)
         Controls.Add(Panel2)
         MainMenuStrip = MenuStrip1
-        Margin = New Padding(3, 4, 3, 4)
+        Margin = New Padding(4, 5, 4, 5)
         MaximizeBox = False
         MdiChildrenMinimizedAnchorBottom = False
         MinimizeBox = False

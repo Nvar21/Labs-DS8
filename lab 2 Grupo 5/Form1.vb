@@ -26,8 +26,8 @@
                 formulario = New frmEnunciado4()
             Case "smiEnun5"
                 formulario = New frmEnunciado5()
-                'Case "smiEnun6"
-                '    formulario = New frmEnunciado6()
+            Case "smiEnun6"
+                formulario = New frmEnunciado6()
         End Select
 
         If formulario IsNot Nothing Then
@@ -37,4 +37,7 @@
         End If
     End Sub
 
+    Private Sub smiEnun6_Click(sender As Object, e As EventArgs) Handles smiEnun6.Click
+
+    End Sub
 End Class
