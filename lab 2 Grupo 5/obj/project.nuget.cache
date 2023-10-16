@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "VseBgc9VT+t2qqGl2b1DYvq+nMDr341ORMJ7YHu+EQZ6ukaMLY3d0Rrtq1Wp9ZHpC+L+zVjUq7e2WrIZtJZi6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nelson\\Documents\\Desktop\\Labs ds8 nuevo\\Labs-DS8\\lab 2 Grupo 5\\lab 2 Grupo 5.vbproj",
+=======
+  "dgSpecHash": "nMYuZM6lrqcfAaoiJMgVuZ9Lq7yPyziyD67vxUPUQqcZEbRVQ98FGAxKTDXnERGLYyr4p6GdjuPrYESWttZK5A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\50763\\source\\repos\\Labs-DS8\\lab 2 Grupo 5\\lab 2 Grupo 5.vbproj",
+>>>>>>> 45fdb7cc7b864b845b8bcc956be5b3145fca4a52
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -8,24 +8,40 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Nelson\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "C:\\Users\\50763\\.nuget\\packages\\": {}
+>>>>>>> 45fdb7cc7b864b845b8bcc956be5b3145fca4a52
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Nelson\\Documents\\Desktop\\Labs ds8 nuevo\\Labs-DS8\\lab 2 Grupo 5\\lab 2 Grupo 5.vbproj",
       "projectName": "lab 2 Grupo 5",
       "projectPath": "C:\\Users\\Nelson\\Documents\\Desktop\\Labs ds8 nuevo\\Labs-DS8\\lab 2 Grupo 5\\lab 2 Grupo 5.vbproj",
       "packagesPath": "C:\\Users\\Nelson\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Nelson\\Documents\\Desktop\\Labs ds8 nuevo\\Labs-DS8\\lab 2 Grupo 5\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\50763\\source\\repos\\Labs-DS8\\lab 2 Grupo 5\\lab 2 Grupo 5.vbproj",
+      "projectName": "lab 2 Grupo 5",
+      "projectPath": "C:\\Users\\50763\\source\\repos\\Labs-DS8\\lab 2 Grupo 5\\lab 2 Grupo 5.vbproj",
+      "packagesPath": "C:\\Users\\50763\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\50763\\source\\repos\\Labs-DS8\\lab 2 Grupo 5\\obj\\",
+>>>>>>> 45fdb7cc7b864b845b8bcc956be5b3145fca4a52
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Nelson\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+        "C:\\Users\\50763\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 45fdb7cc7b864b845b8bcc956be5b3145fca4a52
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

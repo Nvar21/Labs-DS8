@@ -16,14 +16,4 @@ Public Class frmEnunciado5
         lstResultado.Items.Add("> La cadena ha vuelto a su origen")
     End Sub
 
-    Private Function RotarTexto(texto As String) As String
-        'obtiene el ultimo caracter de la cadena
-        Dim ultimoCaracter As Char = texto(texto.Length - 1)
-
-        'crea la nueva cadena
-        Dim textoRotado As String = ultimoCaracter & texto.Substring(0, texto.Length - 1)
-
-        Return textoRotado
-    End Function
-
 End Class
