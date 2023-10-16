@@ -22,7 +22,7 @@ Public Class frmEnunciado2
             btnRegister.Enabled = False
         Else  ' El txt no está vacío
             If IsNumeric(txtTemp.Text) And txtTemp.Text >= 0 Then
-                'Si el valor del txt es una temperatura válida (int o double) y mayor a 0 (si la persona entra caminando al lugar con menos de 0°C me daría miedo)
+                'Si el valor del txt es una temperatura válida (int o double) y mayor a 0 
 
                 If txtTemp.Text = "0" And objTemperaturas.ObtenerTotal > 0 Then 'Si ingresa 0 es que quiere dejar de registrar
                     lblIndicador.Show()

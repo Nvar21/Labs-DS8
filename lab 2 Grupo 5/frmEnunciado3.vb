@@ -16,6 +16,7 @@
                 Dim numeroInvertido As Integer = Integer.Parse(Inversion(numeroOriginal.ToString()))
                 ' Muestra el número invertido en un cuadro de texto
                 txtResultado.Text = numeroInvertido.ToString()
+                '----------------------Aqui se usa el la función del modulo estandard -------------------
             Else ' Manejo de errores si la entrada no es un número válido
                 lblPrueba.Show()
                 lblPrueba.Text = "Tipo de dato Incorrecto, no ingrese letras o caracteres"
