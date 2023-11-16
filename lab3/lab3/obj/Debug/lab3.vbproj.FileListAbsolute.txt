@@ -1,0 +1,16 @@
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\obj\Debug\lab3.vbproj.AssemblyReference.cache
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\obj\Debug\lab3.FrmPrincipal.resources
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\obj\Debug\lab3.Resources.resources
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\obj\Debug\lab3.vbproj.GenerateResource.cache
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\obj\Debug\lab3.vbproj.CoreCompileInputs.cache
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\bin\Debug\lab3.exe.config
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\bin\Debug\lab3.exe
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\bin\Debug\lab3.pdb
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\bin\Debug\lab3.xml
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\obj\Debug\lab3.exe
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\obj\Debug\lab3.xml
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\obj\Debug\lab3.pdb
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\obj\Debug\lab3.FrmCrearCuentas.resources
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\obj\Debug\lab3.FrmRegistrarClientes.resources
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\obj\Debug\lab3.FrmVerMovimientos.resources
+C:\Users\50763\Desktop\Archivos Made\Lic. Des. Software VI semestre\Desarrollo de Software 8\lab3\lab3\obj\Debug\lab3.FrmTransacciones.resources
