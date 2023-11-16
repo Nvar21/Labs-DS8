@@ -23,17 +23,17 @@ Partial Class FrmPrincipal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.tlsInicio = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.tslRegistrarCliente = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.tslCrearCuenta = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.tslTransacciones = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.tslVerMovimientos = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,45 +47,9 @@ Partial Class FrmPrincipal
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator4, Me.tlsInicio, Me.ToolStripSeparator6, Me.tslRegistrarCliente, Me.ToolStripSeparator1, Me.tslCrearCuenta, Me.ToolStripSeparator2, Me.tslTransacciones, Me.ToolStripSeparator3, Me.tslVerMovimientos, Me.ToolStripSeparator5})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(197, 556)
+        Me.ToolStrip1.Size = New System.Drawing.Size(197, 753)
         Me.ToolStrip1.TabIndex = 3
         Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'ToolStripSeparator3
-        '
-        Me.ToolStripSeparator3.AutoSize = False
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(195, 6)
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.AutoSize = False
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(195, 6)
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.AutoSize = False
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(195, 6)
-        '
-        'ToolStripSeparator5
-        '
-        Me.ToolStripSeparator5.AutoSize = False
-        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(194, 6)
-        '
-        'ToolStripSeparator6
-        '
-        Me.ToolStripSeparator6.AutoSize = False
-        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(195, 6)
-        '
-        'ToolStripSeparator4
-        '
-        Me.ToolStripSeparator4.AutoSize = False
-        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(195, 6)
         '
         'tlsInicio
         '
@@ -95,6 +59,12 @@ Partial Class FrmPrincipal
         Me.tlsInicio.Text = "Inicio"
         Me.tlsInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'ToolStripSeparator6
+        '
+        Me.ToolStripSeparator6.AutoSize = False
+        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(195, 6)
+        '
         'tslRegistrarCliente
         '
         Me.tslRegistrarCliente.Image = Global.lab3.My.Resources.Resources._1
@@ -102,6 +72,12 @@ Partial Class FrmPrincipal
         Me.tslRegistrarCliente.Size = New System.Drawing.Size(195, 54)
         Me.tslRegistrarCliente.Text = "Registrar Cliente"
         Me.tslRegistrarCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.AutoSize = False
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(195, 6)
         '
         'tslCrearCuenta
         '
@@ -111,6 +87,12 @@ Partial Class FrmPrincipal
         Me.tslCrearCuenta.Text = "Crear Cuenta"
         Me.tslCrearCuenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.AutoSize = False
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(195, 6)
+        '
         'tslTransacciones
         '
         Me.tslTransacciones.Image = Global.lab3.My.Resources.Resources._3
@@ -118,6 +100,12 @@ Partial Class FrmPrincipal
         Me.tslTransacciones.Size = New System.Drawing.Size(195, 54)
         Me.tslTransacciones.Text = "Realizar Transacción"
         Me.tslTransacciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.AutoSize = False
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(195, 6)
         '
         'tslVerMovimientos
         '
@@ -127,16 +115,28 @@ Partial Class FrmPrincipal
         Me.tslVerMovimientos.Text = "Ver Movimientos"
         Me.tslVerMovimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'ToolStripSeparator5
+        '
+        Me.ToolStripSeparator5.AutoSize = False
+        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(194, 6)
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.AutoSize = False
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(195, 6)
+        '
         'FrmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(871, 556)
+        Me.ClientSize = New System.Drawing.Size(1182, 753)
         Me.Controls.Add(Me.ToolStrip1)
         Me.IsMdiContainer = True
         Me.Name = "FrmPrincipal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)

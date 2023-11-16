@@ -79,6 +79,12 @@
     <Compile Include="FrmCrearCuentas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmInicio.Designer.vb">
+      <DependentUpon>FrmInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmTransacciones.Designer.vb">
       <DependentUpon>FrmTransacciones.vb</DependentUpon>
     </Compile>

@@ -23,31 +23,32 @@ Partial Class FrmTransacciones
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbTipoCuenta = New System.Windows.Forms.ComboBox()
+        Me.cmbCliente = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.rdbRetiro = New System.Windows.Forms.RadioButton()
+        Me.rdbDeposito = New System.Windows.Forms.RadioButton()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txtSaldo = New System.Windows.Forms.TextBox()
+        Me.btnRegistrar = New System.Windows.Forms.Button()
+        Me.panelTransaccion = New System.Windows.Forms.Panel()
+        Me.lblTitulo = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
-        Me.Panel1.SuspendLayout()
+        Me.panelTransaccion.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.cmbTipoCuenta)
+        Me.GroupBox1.Controls.Add(Me.cmbCliente)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Font = New System.Drawing.Font("Georgia", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(23, 21)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(752, 256)
@@ -55,47 +56,49 @@ Partial Class FrmTransacciones
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos del Cliente"
         '
-        'ComboBox2
+        'cmbTipoCuenta
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(291, 154)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(270, 35)
-        Me.ComboBox2.TabIndex = 5
+        Me.cmbTipoCuenta.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbTipoCuenta.FormattingEnabled = True
+        Me.cmbTipoCuenta.Location = New System.Drawing.Point(328, 165)
+        Me.cmbTipoCuenta.Name = "cmbTipoCuenta"
+        Me.cmbTipoCuenta.Size = New System.Drawing.Size(270, 35)
+        Me.cmbTipoCuenta.TabIndex = 5
         '
-        'ComboBox1
+        'cmbCliente
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(291, 56)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(270, 35)
-        Me.ComboBox1.TabIndex = 4
+        Me.cmbCliente.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbCliente.FormattingEnabled = True
+        Me.cmbCliente.Location = New System.Drawing.Point(328, 70)
+        Me.cmbCliente.Name = "cmbCliente"
+        Me.cmbCliente.Size = New System.Drawing.Size(270, 35)
+        Me.cmbCliente.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Georgia", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(92, 157)
+        Me.Label2.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(98, 168)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(174, 27)
+        Me.Label2.Size = New System.Drawing.Size(168, 27)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Tipo de Cuenta:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Georgia", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(92, 59)
+        Me.Label1.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(178, 73)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(92, 27)
+        Me.Label1.Size = New System.Drawing.Size(88, 27)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Cliente:"
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.RadioButton2)
-        Me.GroupBox2.Controls.Add(Me.RadioButton1)
-        Me.GroupBox2.Font = New System.Drawing.Font("Georgia", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Controls.Add(Me.rdbRetiro)
+        Me.GroupBox2.Controls.Add(Me.rdbDeposito)
+        Me.GroupBox2.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(23, 317)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(349, 215)
@@ -103,36 +106,36 @@ Partial Class FrmTransacciones
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Transacciones"
         '
-        'RadioButton2
+        'rdbRetiro
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(128, 69)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(87, 28)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Retiro"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rdbRetiro.AutoSize = True
+        Me.rdbRetiro.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdbRetiro.Location = New System.Drawing.Point(128, 69)
+        Me.rdbRetiro.Name = "rdbRetiro"
+        Me.rdbRetiro.Size = New System.Drawing.Size(94, 31)
+        Me.rdbRetiro.TabIndex = 1
+        Me.rdbRetiro.TabStop = True
+        Me.rdbRetiro.Text = "Retiro"
+        Me.rdbRetiro.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'rdbDeposito
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(118, 144)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(111, 28)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Depósito"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rdbDeposito.AutoSize = True
+        Me.rdbDeposito.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdbDeposito.Location = New System.Drawing.Point(118, 144)
+        Me.rdbDeposito.Name = "rdbDeposito"
+        Me.rdbDeposito.Size = New System.Drawing.Size(121, 31)
+        Me.rdbDeposito.TabIndex = 0
+        Me.rdbDeposito.TabStop = True
+        Me.rdbDeposito.Text = "Depósito"
+        Me.rdbDeposito.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.Label3)
-        Me.GroupBox3.Controls.Add(Me.TextBox1)
-        Me.GroupBox3.Controls.Add(Me.Button1)
-        Me.GroupBox3.Font = New System.Drawing.Font("Georgia", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Controls.Add(Me.txtSaldo)
+        Me.GroupBox3.Controls.Add(Me.btnRegistrar)
+        Me.GroupBox3.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(422, 320)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(353, 212)
@@ -143,57 +146,70 @@ Partial Class FrmTransacciones
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(81, 72)
+        Me.Label3.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(63, 74)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 24)
+        Me.Label3.Size = New System.Drawing.Size(66, 27)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Saldo"
         '
-        'TextBox1
+        'txtSaldo
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(186, 69)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 30)
-        Me.TextBox1.TabIndex = 1
+        Me.txtSaldo.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSaldo.Location = New System.Drawing.Point(166, 69)
+        Me.txtSaldo.Name = "txtSaldo"
+        Me.txtSaldo.Size = New System.Drawing.Size(114, 32)
+        Me.txtSaldo.TabIndex = 1
         '
-        'Button1
+        'btnRegistrar
         '
-        Me.Button1.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(111, 152)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(130, 41)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Registrar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnRegistrar.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistrar.Location = New System.Drawing.Point(102, 154)
+        Me.btnRegistrar.Name = "btnRegistrar"
+        Me.btnRegistrar.Size = New System.Drawing.Size(130, 41)
+        Me.btnRegistrar.TabIndex = 0
+        Me.btnRegistrar.Text = "Registrar"
+        Me.btnRegistrar.UseVisualStyleBackColor = True
         '
-        'Panel1
+        'panelTransaccion
         '
-        Me.Panel1.Controls.Add(Me.GroupBox1)
-        Me.Panel1.Controls.Add(Me.GroupBox3)
-        Me.Panel1.Controls.Add(Me.GroupBox2)
-        Me.Panel1.Location = New System.Drawing.Point(42, 31)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(801, 561)
-        Me.Panel1.TabIndex = 2
+        Me.panelTransaccion.Controls.Add(Me.GroupBox1)
+        Me.panelTransaccion.Controls.Add(Me.GroupBox3)
+        Me.panelTransaccion.Controls.Add(Me.GroupBox2)
+        Me.panelTransaccion.Location = New System.Drawing.Point(40, 120)
+        Me.panelTransaccion.Name = "panelTransaccion"
+        Me.panelTransaccion.Size = New System.Drawing.Size(801, 561)
+        Me.panelTransaccion.TabIndex = 2
+        '
+        'lblTitulo
+        '
+        Me.lblTitulo.AutoSize = True
+        Me.lblTitulo.Font = New System.Drawing.Font("Georgia", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitulo.Location = New System.Drawing.Point(57, 39)
+        Me.lblTitulo.Name = "lblTitulo"
+        Me.lblTitulo.Size = New System.Drawing.Size(321, 32)
+        Me.lblTitulo.TabIndex = 0
+        Me.lblTitulo.Text = "Realizar Transacción"
         '
         'FrmTransacciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(882, 693)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.lblTitulo)
+        Me.Controls.Add(Me.panelTransaccion)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Name = "FrmTransacciones"
-        Me.Text = "FrmDepositosRetiros"
+        Me.Text = "Realizar Transacción"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
+        Me.panelTransaccion.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -202,12 +218,13 @@ Partial Class FrmTransacciones
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents cmbCliente As ComboBox
+    Friend WithEvents cmbTipoCuenta As ComboBox
+    Friend WithEvents rdbRetiro As RadioButton
+    Friend WithEvents rdbDeposito As RadioButton
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents txtSaldo As TextBox
+    Friend WithEvents btnRegistrar As Button
+    Friend WithEvents panelTransaccion As Panel
+    Friend WithEvents lblTitulo As Label
 End Class
