@@ -41,18 +41,18 @@ Partial Class FrmVerMovimientos
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(315, 43)
+        Me.Label1.Location = New System.Drawing.Point(354, 54)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 16)
+        Me.Label1.Size = New System.Drawing.Size(0, 20)
         Me.Label1.TabIndex = 1
         '
         'lblTitulo
         '
         Me.lblTitulo.AutoSize = True
         Me.lblTitulo.Font = New System.Drawing.Font("Georgia", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitulo.Location = New System.Drawing.Point(36, 31)
+        Me.lblTitulo.Location = New System.Drawing.Point(40, 39)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(203, 32)
+        Me.lblTitulo.Size = New System.Drawing.Size(242, 38)
         Me.lblTitulo.TabIndex = 2
         Me.lblTitulo.Text = "Movimientos"
         '
@@ -70,13 +70,14 @@ Partial Class FrmVerMovimientos
         Me.dgvMovimientos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvMovimientos.ColumnHeadersHeight = 29
         Me.dgvMovimientos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_cuenta, Me.Column3, Me.Column1, Me.Column2, Me.Column4})
-        Me.dgvMovimientos.Location = New System.Drawing.Point(42, 307)
+        Me.dgvMovimientos.Location = New System.Drawing.Point(47, 384)
+        Me.dgvMovimientos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dgvMovimientos.Name = "dgvMovimientos"
         Me.dgvMovimientos.ReadOnly = True
         Me.dgvMovimientos.RowHeadersVisible = False
         Me.dgvMovimientos.RowHeadersWidth = 51
         Me.dgvMovimientos.RowTemplate.Height = 24
-        Me.dgvMovimientos.Size = New System.Drawing.Size(805, 278)
+        Me.dgvMovimientos.Size = New System.Drawing.Size(906, 348)
         Me.dgvMovimientos.TabIndex = 3
         '
         'id_cuenta
@@ -123,18 +124,19 @@ Partial Class FrmVerMovimientos
         '
         Me.cmbCliente.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbCliente.FormattingEnabled = True
-        Me.cmbCliente.Location = New System.Drawing.Point(158, 64)
+        Me.cmbCliente.Location = New System.Drawing.Point(178, 80)
+        Me.cmbCliente.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmbCliente.Name = "cmbCliente"
-        Me.cmbCliente.Size = New System.Drawing.Size(224, 35)
+        Me.cmbCliente.Size = New System.Drawing.Size(252, 38)
         Me.cmbCliente.TabIndex = 5
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(34, 67)
+        Me.Label2.Location = New System.Drawing.Point(38, 84)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(99, 27)
+        Me.Label2.Size = New System.Drawing.Size(117, 30)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Nombre:"
         '
@@ -143,23 +145,26 @@ Partial Class FrmVerMovimientos
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.cmbCliente)
         Me.GroupBox1.Font = New System.Drawing.Font("Georgia", 13.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(209, 103)
+        Me.GroupBox1.Location = New System.Drawing.Point(235, 129)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(418, 145)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(470, 181)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Buscar Cliente"
         '
         'FrmVerMovimientos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(882, 649)
+        Me.ClientSize = New System.Drawing.Size(992, 811)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.dgvMovimientos)
         Me.Controls.Add(Me.lblTitulo)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FrmVerMovimientos"
         Me.Text = "Visualizar Movimientos"
         CType(Me.dgvMovimientos, System.ComponentModel.ISupportInitialize).EndInit()

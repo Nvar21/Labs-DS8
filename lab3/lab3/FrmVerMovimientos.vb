@@ -10,5 +10,4 @@
         dgvMovimientos.Margin = New Padding(10, 0, 0, 0)
     End Sub
 
-
 End Class
