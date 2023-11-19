@@ -32,7 +32,6 @@ Public Class FrmTransacciones
         If cuentaSeleccionada IsNot Nothing Then
             Dim p_id_cuenta As Integer = cuentaSeleccionada.id_cuenta
             Dim p_saldo As Double = txtSaldo.Text
-            MsgBox(p_id_cuenta)
 
             If rdbDeposito.Checked Then
                 realizar_deposito(p_id_cuenta, p_saldo)
