@@ -42,4 +42,5 @@
         FrmInicio.WindowState = FormWindowState.Maximized
         FrmInicio.Show()
     End Sub
+
 End Class
