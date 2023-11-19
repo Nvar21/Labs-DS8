@@ -32,14 +32,11 @@ Public Class FrmTransacciones
         If cuentaSeleccionada IsNot Nothing Then
             Dim p_id_cuenta As Integer = cuentaSeleccionada.id_cuenta
             Dim p_saldo As Double = txtSaldo.Text
-            MsgBox(p_id_cuenta)
-
             If rdbDeposito.Checked Then
                 realizar_deposito(p_id_cuenta, p_saldo)
             ElseIf rdbRetiro.Checked Then
                 realizar_retiro(p_id_cuenta, p_saldo)
             End If
-            'llamar a funcion para insertar transacción
         End If
     End Sub
 
@@ -52,7 +49,7 @@ Public Class FrmTransacciones
 
         If cuentaSeleccionada IsNot Nothing Then
             If IsNumeric(txtSaldo.Text) Then
-                Dim saldo As Integer = txtSaldo.Text
+                Dim saldo As Double = txtSaldo.Text
 
                 If saldo > 0 Then
                     If rdbDeposito.Checked Then
