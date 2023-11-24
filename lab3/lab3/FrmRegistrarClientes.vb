@@ -24,7 +24,7 @@
         End If
     End Sub
 
-    Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
+    Private Sub btnRegistrar_Click(sender As Object, e As EventArgs)
         'llamado a la funcion para registrar el cliente nuevo
         Dim nombre As String = txtNombre.Text
         Dim apellido As String = txtApellido.Text
@@ -33,4 +33,5 @@
 
         crear_cliente(nombre, apellido, telefono, direccion)
     End Sub
+
 End Class
