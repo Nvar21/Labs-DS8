@@ -29,4 +29,8 @@
         Dim ListaMovimiento As List(Of Movimiento) = obtener_movimientos_cliente(p_id_cliente)
         dgvMovimientos.DataSource = ListaMovimiento
     End Sub
+
+    Private Sub pbEditar_Click(sender As Object, e As EventArgs) Handles pbEditar.Click
+        FrmEditarCliente.Show()
+    End Sub
 End Class

@@ -43,9 +43,9 @@ Partial Class FrmRegistrarClientes
         '
         Me.lblTitulo.AutoSize = True
         Me.lblTitulo.Font = New System.Drawing.Font("Georgia", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitulo.Location = New System.Drawing.Point(5, 0)
+        Me.lblTitulo.Location = New System.Drawing.Point(4, 0)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(323, 38)
+        Me.lblTitulo.Size = New System.Drawing.Size(273, 32)
         Me.lblTitulo.TabIndex = 3
         Me.lblTitulo.Text = "Registrar Clientes"
         '
@@ -53,18 +53,19 @@ Partial Class FrmRegistrarClientes
         '
         Me.txtApellido.BackColor = System.Drawing.SystemColors.Window
         Me.txtApellido.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtApellido.Location = New System.Drawing.Point(62, 70)
+        Me.txtApellido.Location = New System.Drawing.Point(420, 61)
+        Me.txtApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(356, 35)
+        Me.txtApellido.Size = New System.Drawing.Size(317, 30)
         Me.txtApellido.TabIndex = 12
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(57, 116)
+        Me.Label2.Location = New System.Drawing.Point(415, 32)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(126, 30)
+        Me.Label2.Size = New System.Drawing.Size(108, 27)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Apellido"
         '
@@ -72,9 +73,9 @@ Partial Class FrmRegistrarClientes
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(467, 37)
+        Me.Label5.Location = New System.Drawing.Point(415, 117)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(145, 30)
+        Me.Label5.Size = New System.Drawing.Size(123, 27)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Dirección"
         '
@@ -82,18 +83,19 @@ Partial Class FrmRegistrarClientes
         '
         Me.txtNombre.BackColor = System.Drawing.SystemColors.Window
         Me.txtNombre.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(62, 149)
+        Me.txtNombre.Location = New System.Drawing.Point(57, 61)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(356, 35)
+        Me.txtNombre.Size = New System.Drawing.Size(317, 30)
         Me.txtNombre.TabIndex = 11
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(59, 199)
+        Me.Label4.Location = New System.Drawing.Point(52, 116)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(235, 30)
+        Me.Label4.Size = New System.Drawing.Size(200, 27)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Teléfono / Móvil"
         '
@@ -101,17 +103,19 @@ Partial Class FrmRegistrarClientes
         '
         Me.txtTelefono.BackColor = System.Drawing.SystemColors.Window
         Me.txtTelefono.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTelefono.Location = New System.Drawing.Point(64, 232)
+        Me.txtTelefono.Location = New System.Drawing.Point(57, 143)
+        Me.txtTelefono.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(356, 35)
+        Me.txtTelefono.Size = New System.Drawing.Size(317, 30)
         Me.txtTelefono.TabIndex = 13
         '
         'btnRegistrar
         '
         Me.btnRegistrar.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold)
-        Me.btnRegistrar.Location = New System.Drawing.Point(567, 226)
+        Me.btnRegistrar.Location = New System.Drawing.Point(324, 236)
+        Me.btnRegistrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRegistrar.Name = "btnRegistrar"
-        Me.btnRegistrar.Size = New System.Drawing.Size(186, 47)
+        Me.btnRegistrar.Size = New System.Drawing.Size(165, 38)
         Me.btnRegistrar.TabIndex = 15
         Me.btnRegistrar.Text = "Registrar"
         Me.btnRegistrar.UseVisualStyleBackColor = True
@@ -120,9 +124,9 @@ Partial Class FrmRegistrarClientes
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(59, 37)
+        Me.Label3.Location = New System.Drawing.Point(52, 30)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(124, 30)
+        Me.Label3.Size = New System.Drawing.Size(104, 27)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Nombre"
         '
@@ -130,18 +134,19 @@ Partial Class FrmRegistrarClientes
         '
         Me.txtDireccion.BackColor = System.Drawing.SystemColors.Window
         Me.txtDireccion.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDireccion.Location = New System.Drawing.Point(472, 70)
+        Me.txtDireccion.Location = New System.Drawing.Point(420, 143)
+        Me.txtDireccion.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtDireccion.Multiline = True
         Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(356, 89)
+        Me.txtDireccion.Size = New System.Drawing.Size(317, 72)
         Me.txtDireccion.TabIndex = 14
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(248, 33)
+        Me.Label1.Location = New System.Drawing.Point(220, 26)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 20)
+        Me.Label1.Size = New System.Drawing.Size(0, 16)
         Me.Label1.TabIndex = 0
         '
         'Panel1
@@ -157,29 +162,31 @@ Partial Class FrmRegistrarClientes
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.txtTelefono)
-        Me.Panel1.Location = New System.Drawing.Point(110, 290)
+        Me.Panel1.Location = New System.Drawing.Point(98, 232)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(893, 327)
+        Me.Panel1.Size = New System.Drawing.Size(794, 285)
         Me.Panel1.TabIndex = 16
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.CadetBlue
         Me.Panel2.Controls.Add(Me.lblTitulo)
-        Me.Panel2.Location = New System.Drawing.Point(110, 254)
+        Me.Panel2.Location = New System.Drawing.Point(98, 203)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(893, 45)
+        Me.Panel2.Size = New System.Drawing.Size(794, 36)
         Me.Panel2.TabIndex = 17
         '
         'FrmRegistrarClientes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(1044, 812)
+        Me.ClientSize = New System.Drawing.Size(928, 650)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FrmRegistrarClientes"
         Me.Text = "FrmRegistrarClientes"
         Me.Panel1.ResumeLayout(False)
