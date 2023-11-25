@@ -209,3 +209,4 @@ C:\Users\50763\Source\Repos\Labs-DS8\lab3\lab3\bin\Debug\System.Threading.Tasks.
 C:\Users\50763\Source\Repos\Labs-DS8\lab3\lab3\obj\Debug\lab3.FrmInicio.resources
 C:\Users\50763\Source\Repos\Labs-DS8\lab3\lab3\obj\Debug\lab3.vbproj.CopyComplete
 C:\Users\50763\Source\Repos\Labs-DS8\lab3\lab3\obj\Debug\lab3.FrmEditarCliente.resources
+C:\Users\gutie\Source\Repos\Nvar21\Labs-DS8\lab3\lab3\obj\Debug\lab3.FrmEditarCliente.resources
