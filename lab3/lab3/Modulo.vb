@@ -202,4 +202,28 @@ Module Modulo
         End Try
     End Function
 
+    Function actualizar_cliente(ByVal p_id_cliente As Integer, ByVal p_nombre As String, ByVal p_apellido As String, ByVal p_telefono As String, ByVal p_direccion As String)
+        conexionDB()
+        myConn.Open()
+        Dim glCommand As New MySqlCommand
+        glCommand.Connection = myConn
+        glCommand.CommandText = "SP_actualizar_cliente"
+        glCommand.Parameters.AddWithValue("p_id_cliente", p_id_cliente)
+        glCommand.Parameters.AddWithValue("p_nombre", p_nombre)
+        glCommand.Parameters.AddWithValue("p_apellido", p_apellido)
+        glCommand.Parameters.AddWithValue("p_telefono", p_telefono)
+        glCommand.Parameters.AddWithValue("p_direccion", p_direccion)
+        glCommand.CommandTimeout = 0
+        glCommand.CommandType = CommandType.StoredProcedure
+        Try
+            glCommand.ExecuteNonQuery()
+            MsgBox("Cliente actualizado exitosamente")
+        Catch ex As Exception
+            MsgBox("Error: " & ex.Message)
+        Finally
+            If myConn.State <> ConnectionState.Closed Then myConn.Close()
+        End Try
+    End Function
+
+
 End Module

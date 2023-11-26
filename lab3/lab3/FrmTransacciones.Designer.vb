@@ -86,12 +86,12 @@ Partial Class FrmTransacciones
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(6, 139)
+        Me.Label2.Location = New System.Drawing.Point(30, 140)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(137, 21)
+        Me.Label2.Size = New System.Drawing.Size(74, 21)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Tipo de Cuenta:"
+        Me.Label2.Text = "Cuenta:"
         '
         'Label1
         '

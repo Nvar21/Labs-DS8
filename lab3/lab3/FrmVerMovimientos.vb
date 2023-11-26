@@ -1,5 +1,6 @@
 ﻿Public Class FrmVerMovimientos
     Dim clienteSeleccionado As Cliente
+    Dim datosEditablesCliente As New Dictionary(Of String, String)
     Private Sub FrmVerMovimientos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblTitulo.Left = Me.Width / 2 - (lblTitulo.Width / 2)
         GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
@@ -24,13 +25,26 @@
         ' Verificar si se ha seleccionado un cliente en el ComboBox
         If cmbCliente.SelectedItem IsNot Nothing AndAlso TypeOf cmbCliente.SelectedItem Is Cliente Then
             clienteSeleccionado = DirectCast(cmbCliente.SelectedItem, Cliente)
+            btnEditar.Enabled = True
+            pbEditar.Enabled = True
         End If
         p_id_cliente = clienteSeleccionado.id_cliente
         Dim ListaMovimiento As List(Of Movimiento) = obtener_movimientos_cliente(p_id_cliente)
         dgvMovimientos.DataSource = ListaMovimiento
     End Sub
 
-    Private Sub pbEditar_Click(sender As Object, e As EventArgs) Handles pbEditar.Click
-        FrmEditarCliente.Show()
+    Private Sub pbEditar_Click(sender As Object, e As EventArgs) Handles pbEditar.Click, btnEditar.Click
+        datosEditablesCliente.Clear()
+        Try
+            datosEditablesCliente.Add("nombre", clienteSeleccionado.nombre)
+            datosEditablesCliente.Add("apellido", clienteSeleccionado.apellido)
+            datosEditablesCliente.Add("telefono_movil", clienteSeleccionado.telefono_movil)
+            datosEditablesCliente.Add("direccion", clienteSeleccionado.direccion)
+            datosEditablesCliente.Add("id", clienteSeleccionado.id_cliente)
+            Dim frmEditarCliente As New FrmEditarCliente(datosEditablesCliente)
+            frmEditarCliente.ShowDialog()
+        Catch ex As Exception
+            MsgBox("error transferencia de datos")
+        End Try
     End Sub
 End Class
