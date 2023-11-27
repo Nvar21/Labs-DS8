@@ -4,6 +4,9 @@ Imports MySql.Data.MySqlClient
 Public Class FrmTransacciones
     Dim cuentaSeleccionada As Cuenta
     Private Sub FrmTransacciones_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblTitulo.Left = Me.Width / 2 - (lblTitulo.Width / 2)
+        panelTransaccion.Left = Me.Width / 2 - (panelTransaccion.Width / 2)
+
         Dim listaClientes As List(Of Cliente) = obtener_clientes()
 
         ' poblar cmbCliente con los datos obtenidos del modulo

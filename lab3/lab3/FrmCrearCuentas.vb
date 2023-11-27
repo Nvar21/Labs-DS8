@@ -2,9 +2,12 @@
     Dim clienteSeleccionado As Cliente
     Dim p_id_cliente As Integer = 1
     Private Sub FrmCrearCuentas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label5.Left = Me.Width / 2 - (Label5.Width / 2)
+        GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
+
         Dim listaClientes As List(Of Cliente) = obtener_clientes()
 
-        ' poblar cmbCliente con los datos obtenidos del  modulo
+        ' poblar cmbCliente con los datos obtenidos del modulo
         cmbCliente.DataSource = listaClientes
         cmbCliente.DisplayMember = "IdNombreApellido"
         cmbCliente.ValueMember = "id_cliente"

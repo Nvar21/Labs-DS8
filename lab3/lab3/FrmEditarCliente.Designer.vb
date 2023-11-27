@@ -25,6 +25,8 @@ Partial Class FrmEditarCliente
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lblTitulo = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.txtApellido = New System.Windows.Forms.TextBox()
@@ -36,8 +38,6 @@ Partial Class FrmEditarCliente
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -46,20 +46,19 @@ Partial Class FrmEditarCliente
         '
         Me.Panel2.BackColor = System.Drawing.Color.CadetBlue
         Me.Panel2.Controls.Add(Me.lblTitulo)
-        Me.Panel2.Location = New System.Drawing.Point(23, 44)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel2.Location = New System.Drawing.Point(31, 54)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(596, 29)
+        Me.Panel2.Size = New System.Drawing.Size(795, 36)
         Me.Panel2.TabIndex = 19
         '
         'lblTitulo
         '
         Me.lblTitulo.AutoSize = True
         Me.lblTitulo.Font = New System.Drawing.Font("Georgia", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitulo.Location = New System.Drawing.Point(2, 4)
-        Me.lblTitulo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTitulo.Location = New System.Drawing.Point(3, 5)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(149, 23)
+        Me.lblTitulo.Size = New System.Drawing.Size(184, 29)
         Me.lblTitulo.TabIndex = 3
         Me.lblTitulo.Text = "Editar Cliente"
         Me.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -80,11 +79,35 @@ Partial Class FrmEditarCliente
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.txtTelefono)
-        Me.Panel1.Location = New System.Drawing.Point(23, 67)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel1.Location = New System.Drawing.Point(31, 82)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(596, 288)
+        Me.Panel1.Size = New System.Drawing.Size(795, 354)
         Me.Panel1.TabIndex = 18
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(81, Byte), Integer))
+        Me.Label7.Font = New System.Drawing.Font("Georgia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(482, 240)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(73, 20)
+        Me.Label7.TabIndex = 18
+        Me.Label7.Text = "amarillo"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Georgia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(169, 240)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(386, 40)
+        Me.Label6.TabIndex = 17
+        Me.Label6.Text = "*Los campos resaltados en           " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "serán actualizados si presiona ""Guardar Cam" &
+    "bios"""
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnCancelar
         '
@@ -93,10 +116,10 @@ Partial Class FrmEditarCliente
         Me.btnCancelar.FlatAppearance.BorderSize = 3
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelar.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold)
-        Me.btnCancelar.Location = New System.Drawing.Point(349, 248)
-        Me.btnCancelar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCancelar.Location = New System.Drawing.Point(465, 305)
+        Me.btnCancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(109, 32)
+        Me.btnCancelar.Size = New System.Drawing.Size(145, 39)
         Me.btnCancelar.TabIndex = 16
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = False
@@ -109,10 +132,10 @@ Partial Class FrmEditarCliente
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold)
         Me.btnGuardar.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnGuardar.Location = New System.Drawing.Point(98, 248)
-        Me.btnGuardar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnGuardar.Location = New System.Drawing.Point(131, 305)
+        Me.btnGuardar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(197, 32)
+        Me.btnGuardar.Size = New System.Drawing.Size(263, 39)
         Me.btnGuardar.TabIndex = 15
         Me.btnGuardar.Text = "Guardar Cambios"
         Me.btnGuardar.UseVisualStyleBackColor = False
@@ -121,20 +144,19 @@ Partial Class FrmEditarCliente
         '
         Me.txtApellido.BackColor = System.Drawing.SystemColors.Window
         Me.txtApellido.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtApellido.Location = New System.Drawing.Point(315, 48)
-        Me.txtApellido.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtApellido.Location = New System.Drawing.Point(420, 59)
+        Me.txtApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(239, 26)
+        Me.txtApellido.Size = New System.Drawing.Size(317, 30)
         Me.txtApellido.TabIndex = 12
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(312, 24)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(416, 30)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(87, 21)
+        Me.Label2.Size = New System.Drawing.Size(108, 27)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Apellido"
         '
@@ -142,30 +164,28 @@ Partial Class FrmEditarCliente
         '
         Me.txtDireccion.BackColor = System.Drawing.SystemColors.Window
         Me.txtDireccion.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDireccion.Location = New System.Drawing.Point(315, 117)
-        Me.txtDireccion.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtDireccion.Location = New System.Drawing.Point(420, 144)
+        Me.txtDireccion.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtDireccion.Multiline = True
         Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(239, 59)
+        Me.txtDireccion.Size = New System.Drawing.Size(317, 72)
         Me.txtDireccion.TabIndex = 14
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(165, 21)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(220, 26)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 13)
+        Me.Label1.Size = New System.Drawing.Size(0, 16)
         Me.Label1.TabIndex = 0
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(39, 24)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(52, 30)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(85, 21)
+        Me.Label3.Size = New System.Drawing.Size(104, 27)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Nombre"
         '
@@ -173,20 +193,19 @@ Partial Class FrmEditarCliente
         '
         Me.txtNombre.BackColor = System.Drawing.SystemColors.Window
         Me.txtNombre.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(43, 48)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtNombre.Location = New System.Drawing.Point(57, 59)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(239, 26)
+        Me.txtNombre.Size = New System.Drawing.Size(317, 30)
         Me.txtNombre.TabIndex = 11
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(311, 96)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(415, 118)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(100, 21)
+        Me.Label5.Size = New System.Drawing.Size(123, 27)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Dirección"
         '
@@ -194,10 +213,9 @@ Partial Class FrmEditarCliente
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(39, 95)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(52, 117)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(159, 21)
+        Me.Label4.Size = New System.Drawing.Size(200, 27)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Teléfono / Móvil"
         '
@@ -205,46 +223,21 @@ Partial Class FrmEditarCliente
         '
         Me.txtTelefono.BackColor = System.Drawing.SystemColors.Window
         Me.txtTelefono.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTelefono.Location = New System.Drawing.Point(43, 117)
-        Me.txtTelefono.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtTelefono.Location = New System.Drawing.Point(57, 144)
+        Me.txtTelefono.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(239, 26)
+        Me.txtTelefono.Size = New System.Drawing.Size(317, 30)
         Me.txtTelefono.TabIndex = 13
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Georgia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(127, 195)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(309, 32)
-        Me.Label6.TabIndex = 17
-        Me.Label6.Text = "*Los campos resaltados en           " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "serán actualizados si presiona ""Guardar Cam" &
-    "bios"""
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(81, Byte), Integer))
-        Me.Label7.Font = New System.Drawing.Font("Georgia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(303, 195)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(59, 16)
-        Me.Label7.TabIndex = 18
-        Me.Label7.Text = "amarillo"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FrmEditarCliente
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(643, 366)
+        Me.ClientSize = New System.Drawing.Size(857, 450)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmEditarCliente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmEditarCliente"
