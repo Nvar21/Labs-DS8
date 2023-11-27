@@ -4,7 +4,6 @@
     End Sub
 
     Private Sub Validar_TextBoxs(sender As Object, e As EventArgs) Handles txtNombre.TextChanged, txtApellido.TextChanged, txtTelefono.TextChanged, txtDireccion.TextChanged
-        'imprimir cual es el que ha cambiado
         If IsNumeric(sender.text) Then
             sender.BackColor = Color.FromArgb(233, 213, 2) 'Amarillo de Alerta
             btnRegistrar.Enabled = False
@@ -26,7 +25,7 @@
     Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
 
 
-        'llamado a la funcion para registrar el cliente nuevo
+        'asignar variables para hacer llamado a la funcion para registrar el cliente nuevo
         Dim nombre As String = txtNombre.Text
         Dim apellido As String = txtApellido.Text
         Dim telefono As String = txtTelefono.Text
